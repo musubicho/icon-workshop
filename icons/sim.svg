@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#453D35" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" data-category="日常">
+  <title>通讯</title>
+  <path d="M14 5h13q2 0 3.5 1.5l7 7Q39 15 39 17v21q0 5-5 5H14q-5 0-5-5V10q0-5 5-5Z"/>
+  <rect x="15" y="21" width="18" height="15" rx="4" stroke="#8A6200"/>
+  <path d="M15 28h18M21 22v13M27 22v13" stroke="#8A6200"/>
+  <path d="M16 12h7M16 16h4" stroke="#C23B22"/>
+</svg>

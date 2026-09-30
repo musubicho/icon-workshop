@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#453D35" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" data-category="饮食">
+  <title>饭团</title>
+  <desc>软圆的米饭轮廓，一片海苔和四粒米。</desc>
+  <path d="M21 7c2-3 5-3 7 0l14 25c3 5 1 9-5 9H11c-6 0-8-4-5-9L21 7Z"/>
+  <rect x="17" y="27" width="14" height="14" rx="2.5" fill="#453D35" fill-opacity=".15"/>
+  <path d="M13 26h.1M20 18h.1M32 25h.1M28 15h.1"/>
+  <path d="M10 32c-1 2-1 4 1 5" stroke="#C23B22"/>
+</svg>

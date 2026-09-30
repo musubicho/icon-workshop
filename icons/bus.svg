@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#453D35" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" data-category="旅途">
+  <title>巴士</title>
+  <rect x="7" y="6" width="34" height="34" rx="9"/>
+  <rect x="12" y="15" width="24" height="12" rx="4"/>
+  <path d="M18 11h12M15 23h7M12 40v3M36 40v3"/>
+  <path d="M13 33h4M31 33h4M21 37h6" stroke="#C23B22"/>
+  <path d="M4 18v6M44 18v6" stroke="#8A6200"/>
+</svg>

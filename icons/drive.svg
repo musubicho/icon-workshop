@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#453D35" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" data-category="旅途">
+  <title>自驾</title>
+  <circle cx="24" cy="24" r="17"/>
+  <path d="M9 18q15-6 30 0M8 23l11 4M40 23l-11 4M21 29l-2 11M27 29l2 11"/>
+  <circle cx="24" cy="25" r="5" fill="#C23B22" fill-opacity=".12" stroke="#C23B22"/>
+  <path d="M15 11q9-5 18 0" stroke="#8A6200"/>
+</svg>

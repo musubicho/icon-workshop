@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#453D35" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" data-category="账本">
+  <title>分摊</title>
+  <circle cx="24" cy="10" r="5" fill="#C23B22" fill-opacity=".12" stroke="#C23B22"/>
+  <path d="M24 15v6M12 30v-4c0-3 2-5 5-5h14c3 0 5 2 5 5v4M24 21v9"/>
+  <path d="M9 28l1.6 1.6q1.4 1.4 2.8 0L15 28M21 28l1.6 1.6q1.4 1.4 2.8 0L27 28M33 28l1.6 1.6q1.4 1.4 2.8 0L39 28"/>
+  <circle cx="12" cy="38" r="4"/><circle cx="24" cy="38" r="4"/><circle cx="36" cy="38" r="4"/>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#453D35" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" data-category="饮食">
+  <title>甜品</title>
+  <desc>一枚软圆的鲷鱼烧。</desc>
+  <path d="M33 18c-7-13-24-10-27 2-3 11 12 20 25 12l7 5q4 2 4-2V15q0-4-4-2l-5 5Z"/>
+  <circle cx="13" cy="21" r="1" fill="#453D35"/>
+  <path d="M7 28h5M19 14c-5 6-5 14 1 20M23 19q3 3 0 6M28 23q3 3 0 6" stroke="#8A6200"/>
+  <path d="M22 11q3-4 6 0M21 35q4 3 7-1M36 19v11" stroke="#C23B22"/>
+</svg>

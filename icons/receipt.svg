@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#453D35" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" data-category="账本">
+  <title>小票</title>
+  <path d="M15 7h19q3 0 3 3v28q0 3-2.5 1.5Q33 38 31.5 39.5T28.5 39.5T25.5 39.5T22.5 39.5T19.5 39.5T16.5 39.5Q15 38 13.5 39.5 12 41 12 38V10q0-3 3-3Z"/>
+  <path d="M18 16h13M18 22h7M30 22h1M18 28h13"/>
+  <path d="M9 12H8q-2 0-2 2v4M9 25H8q-2 0-2 2v5" stroke="#8A6200"/>
+  <path d="m23 33 1.2 1.2q.8.8 1.6 0L30 30" stroke="#C23B22"/>
+</svg>

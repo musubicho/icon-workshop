@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#453D35" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" data-category="饮食">
+  <title>拉面</title>
+  <desc>热汤、筷子和半枚溏心蛋。</desc>
+  <path d="M7 25c1 10 7 15 17 15s16-5 17-15"/>
+  <ellipse cx="24" cy="24" rx="17" ry="6"/>
+  <path d="M19 40v1q0 2 2 2h6q2 0 2-2v-1M10 31c4 3 8 4 14 4" stroke="#C23B22"/>
+  <path d="M15 19c-3-3 4-4 1-8M24 17c-3-3 4-4 1-8" stroke="#8A6200"/>
+  <path d="m29 23 11-15m-6 16 11-15"/>
+  <ellipse cx="21" cy="24" rx="3.2" ry="2.2" stroke="#C23B22"/>
+  <path d="M11 24h3M28 26h4" stroke="#53765A"/>
+</svg>
