@@ -2,6 +2,5 @@
   <title>结绳</title>
   <path d="M24 22C18 8 6 7 6 17c0 9 12 14 18 5Zm0 0c6-14 18-15 18-5 0 9-12 14-18 5Z" stroke="#C23B22"/>
   <path d="M24 25c-7 6-12 8-17 5M24 25c7 6 12 8 17 5M21 26l-4 15M27 26l4 15" stroke="#C23B22"/>
-  <path d="m16 41 3 1M29 42l3-1" stroke="#8A6200"/>
   <rect x="20" y="20" width="8" height="7" rx="3" fill="#8A6200" fill-opacity=".15" stroke="#8A6200"/>
 </svg>

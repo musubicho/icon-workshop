@@ -2,6 +2,6 @@
   <title>外卖</title>
   <rect x="7" y="18" width="34" height="24" rx="7"/>
   <path d="M16 18v-5a8 8 0 0 1 16 0v5M7 26h34"/>
-  <path d="M14 34h10M14 38h6" stroke="#C23B22"/>
-  <path d="m30 31 5 7m-1-8 5 7" stroke="#8A6200"/>
+  <path d="M14 34h9M14 38h6" stroke="#C23B22"/>
+  <path d="M27.5 32l3.5 5M32.5 31l3.5 5" stroke="#8A6200"/>
 </svg>

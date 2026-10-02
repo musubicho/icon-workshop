@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#453D35" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" data-category="饮食">
   <title>酒水</title>
   <path d="M14 6h7q2 0 2 2v7c0 3 5 6 5 12v10q0 5-5 5H12q-5 0-5-5V27c0-6 5-9 5-12V8q0-2 2-2Z"/>
-  <path d="M12 13h11M11 32q6 3 13 0" stroke="#C23B22"/>
+  <path d="M14.4 13h6.2M11 32q6 3 13 0" stroke="#C23B22"/>
   <ellipse cx="17.5" cy="26" rx="3" ry="4" stroke="#8A6200"/>
   <path d="M32 31c0 7 1 11 6 11s6-4 6-11"/>
   <ellipse cx="38" cy="31" rx="6" ry="2.5" stroke="#8A6200"/>
