@@ -2,5 +2,5 @@
   <title>模型</title>
   <rect x="11" y="11" width="26" height="26" rx="6"/>
   <rect x="18" y="18" width="12" height="12" rx="3" fill="#C23B22" fill-opacity=".12" stroke="#C23B22"/>
-  <path d="M19 5v6M29 5v6M19 37v6M29 37v6M5 19h6M5 29h6M37 19h6M37 29h6" stroke="#8A6200"/>
+  <path d="M19 5v6M29 5v6M19 37v6M29 37v6M5 19h6M5 29h6M37 19h6M37 29h6"/>
 </svg>

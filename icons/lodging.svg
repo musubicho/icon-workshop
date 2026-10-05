@@ -1,8 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#453D35" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" data-category="旅途">
   <title>住宿</title>
-  <path d="M9 34v-7q0-4 4-4h22q4 0 4 4v7"/>
-  <path d="M13 34v-4q0-2 2-2h5q2 0 2 2v4M26 34v-4q0-2 2-2h5q2 0 2 2v4" stroke="#C23B22"/>
+  <path d="M9 34V25q0-4 4-4h22q4 0 4 4v9"/>
+  <rect x="13" y="24.6" width="8.6" height="5.8" rx="2.4" stroke="#C23B22"/>
+  <rect x="26.4" y="24.6" width="8.6" height="5.8" rx="2.4" stroke="#C23B22"/>
   <rect x="6" y="34" width="36" height="7" rx="2.5"/>
   <path d="M10 41v4M38 41v4"/>
-  <path d="M29.6 5.4c-1.3 4.1 1.9 7.9 5.8 7.2q1.7-.3.8 1.2A7 7 0 1 1 28.4 4.8q1.6-.7 1.2.6Z" fill="#8A6200" fill-opacity=".12" stroke="#8A6200"/>
+  <path d="M29.6 3.4c-1.3 4.1 1.9 7.9 5.8 7.2q1.7-.3.8 1.2A7 7 0 1 1 28.4 2.8q1.6-.7 1.2.6Z" fill="#8A6200" fill-opacity=".12" stroke="#8A6200"/>
 </svg>

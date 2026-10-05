@@ -36,6 +36,8 @@ Open the URL Vite prints (port **4173** by default). The dev server binds to loc
 
 ## Refine an icon
 
+Read the drawing rules in [docs/icon-guidelines.md](docs/icon-guidelines.md) first: stroke width, palette, spacing between lines, and the self-check before each change.
+
 1. Open an icon's page. In dev mode, the **SVG 源稿** editor appears in the side panel; previews update as you type.
 2. Click **保存修改** or press **⌘S / Ctrl+S** to write the file in `icons/`.
 3. Use **添一枚图标** on the home page to create a new source file. IDs start with a lowercase letter and contain only lowercase letters, digits, and hyphens, up to 64 characters. The ID becomes the filename and iOS resource name.
@@ -106,7 +108,7 @@ Custom colors retain their original values in color previews and exports, so che
 | Collection | Icons |
 | --- | --- |
 | Ledger · 账本 | Guest, ledger, receipt, split, transfer, wallet |
-| Food · 饮食 | Groceries, matcha, onigiri, ramen, sake, taiyaki, takeout |
+| Food · 饮食 | Groceries, matcha, onigiri, pudding, ramen, sake, takeout |
 | Travel · 旅途 | Bus, drive, gift, lodging, passport, pin, plane, sight, taxi, ticket, train, walk |
 | Everyday · 日常 | Entertainment, medicine, other, rent, shopping, SIM, subscription, tissue, top-up, utilities |
 | Interface · 界面 | Appearance, calendar, camera, chats, clear, clock, cloud, copy, database, delete account, developer, device, directions, done, download, edit, failed, filter, fit, folder, forget, hide, info, invite, language, later, layers, link, list, locate, map, memory, model, nearby, note, photo, privacy, profile, refresh, reschedule, scan, schedule, seal, search, settings, share, sheet, sign out, sparkle, stats, storage, swap, trash, undo, usage, want |

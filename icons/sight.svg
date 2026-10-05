@@ -2,6 +2,6 @@
   <title>游玩</title>
   <desc>一道柔和上扬的鸟居。</desc>
   <path d="M5 9q19 6 38 0M7 15q17 3 34 0" stroke="#C23B22"/>
-  <path d="M15 17l-2 24M33 17l2 24M12 24h24M24 17v7"/>
-  <path d="M10 42h6M32 42h6" stroke="#8A6200"/>
+  <path d="M14.8 19.7 13 41M33.2 19.7 35 41M12 24h24M24 20.1v3.9"/>
+  <path d="M10 42h6M32 42h6"/>
 </svg>

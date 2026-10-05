@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#453D35" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" data-category="饮食">
   <title>买菜</title>
   <path d="M17 31v4M24 31v4M31 31v4" stroke="#8A6200"/>
-  <path d="M22 24c-4-7-2-11 2-11 5 0 6 5 3 11" stroke="#C23B22"/>
-  <path d="M24 13q-5-3-5-7 6 0 6 6M25 13q1-6 6-6 0 4-6 6M33 24v-8q0-4 3-5" stroke="#53765A"/>
+  <path d="M 20.36,20.39 C 18.82,15.64 20.75,13 24,13 C 27.95,13 29.4,16.12 28.36,20.39" stroke="#C23B22"/>
+  <path d="M24 13q-5-3-5-7 6 0 6 6M25 13q1-6 6-6 0 4-6 6M 33,20.4 L 33,16 Q 33,12 36,11" stroke="#53765A"/>
   <path d="M8 24h32q3 0 2 4l-3 11q-.8 3-4 3H13q-3.2 0-4-3L6 28q-1-4 2-4Z"/>
 </svg>

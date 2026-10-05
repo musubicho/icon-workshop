@@ -2,7 +2,7 @@
   <title>巴士</title>
   <rect x="7" y="6" width="34" height="34" rx="9"/>
   <rect x="12" y="15" width="24" height="12" rx="4"/>
-  <path d="M18 11h12M15 23h7M16 40v3M32 40v3"/>
-  <path d="M13 33h4M31 33h4M21 37h6" stroke="#C23B22"/>
-  <path d="M4 18v6M44 18v6" stroke="#8A6200"/>
+  <path d="M18 11h12M15.6 23h6.4M16 40v3M32 40v3"/>
+  <path d="M13 33h4M31 33h4M21 36.4h6" stroke="#C23B22"/>
+  <path d="M3.4 18v6M44.6 18v6" stroke="#8A6200"/>
 </svg>

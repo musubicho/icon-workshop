@@ -2,6 +2,6 @@
   <title>账本与聊天</title>
   <ellipse cx="24" cy="12" rx="15" ry="5" fill="#8A6200" fill-opacity=".16"/>
   <path d="M9 12v24c0 2.8 6.7 5 15 5s15-2.2 15-5V12"/>
-  <path d="M9 24c0 2.8 6.7 5 15 5s15-2.2 15-5" stroke="#8A6200"/>
+  <path d="M12.6 27.25A15 5 0 0 0 35.4 27.25" stroke="#8A6200"/>
   <path d="M16 35.5h5" stroke="#C23B22"/>
 </svg>

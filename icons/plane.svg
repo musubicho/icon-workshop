@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#453D35" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" data-category="旅途">
   <title>航班</title>
   <path d="M24 5c-2 0-3 2.5-3 6v7.3q0 1.1-1 1.7L8.2 27.6Q7 28.3 7 29.7v.9q0 1.4 1.4.9L20 27.4q1-.3 1 .8v8.3q0 .9-.7 1.5l-3.6 2.8q-.7.6-.7 1.5v.4q0 1.1 1 .7l6-2.2q1-.4 2 0l6 2.2q1 .4 1-.7v-.4q0-.9-.7-1.5L27.7 38q-.7-.6-.7-1.5v-8.3q0-1.1 1-.8l11.6 4.1q1.4.5 1.4-.9v-.9q0-1.4-1.2-2.1L28 20q-1-.6-1-1.7V11c0-3.5-1-6-3-6Z"/>
-  <path d="M24 9v6M12 29l5-2M31 27l5 2" stroke="#C23B22"/>
-  <path d="M7 12h6M5 17h7" stroke="#8A6200"/>
+  <path d="M7 12h6" stroke="#C23B22"/>
+  <path d="M5 17h7" stroke="#8A6200"/>
 </svg>

@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#453D35" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" data-category="日常">
   <title>其他</title>
-  <path d="M14 8h13q3 0 5 2l9 9q3 3 0 6L25 41q-3 3-6 0l-9-9q-2-2-2-5V14q0-6 6-6Z"/>
+  <path d="M12.8 8H27q3 0 5 2l9 9q3 3 0 6L25 41q-3 3-6 0l-9-9q-2-2-2-5V12.8"/>
   <circle cx="18" cy="18" r="3" stroke="#8A6200"/>
-  <path d="m23 29 5-5m-1 9 5-5M18 18 9.5 9.5q-3-3-3-6.5" stroke="#C23B22"/>
+  <path d="m20.2 25.2 5-5m-1 9 5-5M18 18 9.5 9.5q-3-3-3-6.5" stroke="#C23B22"/>
 </svg>

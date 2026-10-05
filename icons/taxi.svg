@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#453D35" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" data-category="旅途">
   <title>打车</title>
-  <path d="M19 11.8V8.5q0-2 2-2h6q2 0 2 2v3.3" stroke="#8A6200"/>
+  <rect x="20" y="3.6" width="8" height="4.3" rx="2" stroke="#8A6200"/>
   <path d="M14 13q10-3 20 0l4 11q4 2 4 7v5q0 4-4 4H10q-4 0-4-4v-5q0-5 4-7l4-11Z"/>
   <path d="m10 24 5-1q9-2 18 0l5 1M7 34h34M12 40v3M36 40v3"/>
-  <path d="M12 29h4M32 29h4M21 37h6" stroke="#C23B22"/>
+  <path d="M12 29h4M32 29h4" stroke="#C23B22"/>
 </svg>

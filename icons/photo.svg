@@ -2,6 +2,6 @@
   <title>照片</title>
   <rect x="6" y="9" width="36" height="30" rx="6"/>
   <path d="M6 32l10-10q2-2 4 0l17 17"/>
-  <path d="M27 29l3.5-3.5q2-2 4 0L42 33" stroke="#8A6200"/>
+  <path d="M29.5 26.5l1-1q2-2 4 0l3.9 3.9" stroke="#8A6200"/>
   <circle cx="32" cy="17" r="3.5" fill="#C23B22" fill-opacity=".12" stroke="#C23B22"/>
 </svg>

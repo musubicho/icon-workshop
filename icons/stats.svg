@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#453D35" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" data-category="界面">
   <title>统计</title>
   <path d="M22 10A16 16 0 1 0 38 26H22Z"/>
-  <path d="M22 26 10.7 37.3" stroke="#8A6200"/>
+  <path d="M18.4 29.6 13.2 34.8" stroke="#8A6200"/>
   <path d="M26 6A16 16 0 0 1 42 22H26Z" fill="#C23B22" fill-opacity=".12" stroke="#C23B22"/>
 </svg>

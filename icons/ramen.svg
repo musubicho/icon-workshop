@@ -4,9 +4,9 @@
   <path d="M7 24c1 10.7 7 16 17 16s16-5.3 17-16"/>
   <ellipse cx="24" cy="24" rx="17" ry="6"/>
   <path d="M19 40v1q0 2 2 2h6q2 0 2-2v-1"/>
-  <path d="M10 31c4 3 8 4 14 4" stroke="#C23B22"/>
-  <path d="M15 19c-3-3 4-4 1-8M24 17c-3-3 4-4 1-8" stroke="#8A6200"/>
+  <path d="M14 33.4c3 1.2 6 1.6 10 1.6" stroke="#C23B22"/>
+  <path d="M15 15c-3-3 4-4 1-8M24 14c-3-3 4-4 1-8" stroke="#8A6200"/>
   <path d="m29 23 11-15m-6 16 11-15"/>
   <ellipse cx="21" cy="24" rx="3.2" ry="2.2" stroke="#C23B22"/>
-  <path d="M11 24h3M28 26h4" stroke="#53765A"/>
+  <path d="M11 24h3" stroke="#53765A"/>
 </svg>

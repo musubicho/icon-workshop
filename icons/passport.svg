@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#453D35" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" data-category="旅途">
   <title>签证保险</title>
   <rect x="10" y="5" width="28" height="38" rx="5"/>
-  <path d="M15 8v32M22 36h9" stroke="#C23B22"/>
-  <circle cx="26" cy="22" r="8" stroke="#8A6200"/>
-  <ellipse cx="26" cy="22" rx="3.5" ry="8" stroke="#8A6200"/>
-  <path d="M18 22h16" stroke="#8A6200"/>
+  <path d="M15 8.6v30.8M22 36h9" stroke="#C23B22"/>
+  <circle cx="26.6" cy="22" r="7.4" stroke="#8A6200"/>
+  <ellipse cx="26.6" cy="22" rx="3.2" ry="7.4" stroke="#8A6200"/>
+  <path d="M19.2 22h14.8" stroke="#8A6200"/>
 </svg>
