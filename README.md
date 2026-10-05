@@ -22,6 +22,16 @@ Rounded outlines, warm ink, vermilion, gold, and matcha green. The collection co
 
 ![The local SVG workshop](docs/images/workshop.png)
 
+## Online preview
+
+A read-only copy is published at **<https://musubicho.github.io/icon-workshop/>** on every push to `main`. You can browse, preview, download SVGs and export the iOS asset catalog there; saving and adding icons need the local workshop.
+
+To build the same static copy yourself:
+
+```sh
+python3 server.py --build _site
+```
+
 ## Run locally
 
 Requires **Python 3.10+** and a modern browser. No packages or build step are needed.

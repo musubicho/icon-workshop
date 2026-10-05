@@ -6,9 +6,10 @@ import math
 import os
 from pathlib import Path
 import re
+import shutil
 import tempfile
 from http.server import HTTPServer, SimpleHTTPRequestHandler
-from urllib.parse import parse_qs, urlsplit
+from urllib.parse import urlsplit
 import xml.etree.ElementTree as ET
 import zipfile
 
@@ -118,6 +119,18 @@ def export_ios(mode):
     return output.getvalue()
 
 
+def build_site(out):
+    out = Path(out)
+    shutil.rmtree(out, ignore_errors=True)
+    shutil.copytree(ROOT / "web", out)
+    (out / "api").mkdir()
+    icons = [icon_info(path) for path in sorted(ICON_DIR.glob("*.svg"))]
+    (out / "api" / "icons").write_text(json.dumps({"icons": icons, "palette": PALETTE, "readonly": True}, ensure_ascii=False))
+    for mode in ("duo", "mono"):
+        (out / "api" / f"MusubiIcons-{mode}.zip").write_bytes(export_ios(mode))
+    (out / ".nojekyll").touch()
+
+
 class Handler(SimpleHTTPRequestHandler):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, directory=str(ROOT / "web"), **kwargs)
@@ -145,10 +158,8 @@ class Handler(SimpleHTTPRequestHandler):
         try:
             if route.path == "/api/icons":
                 return self.reply({"icons": [icon_info(path) for path in sorted(ICON_DIR.glob("*.svg"))], "palette": PALETTE})
-            if route.path == "/api/export-ios":
-                mode = parse_qs(route.query).get("mode", ["duo"])[0]
-                if mode not in ("duo", "mono"):
-                    raise ValueError("未知图标样式。")
+            if export := re.fullmatch(r"/api/MusubiIcons-(duo|mono)\.zip", route.path):
+                mode = export.group(1)
                 return self.reply(export_ios(mode), content_type="application/zip", filename=f"MusubiIcons-{mode}.zip")
             return super().do_GET()
         except ValueError as error:
@@ -180,7 +191,11 @@ class Handler(SimpleHTTPRequestHandler):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--port", type=int, default=4173)
+    parser.add_argument("--build", metavar="DIR", help="write a read-only static copy to DIR instead of serving")
     args = parser.parse_args()
+    if args.build:
+        build_site(args.build)
+        raise SystemExit
     with HTTPServer(("127.0.0.1", args.port), Handler) as server:
         print(f"图标工坊 → http://127.0.0.1:{server.server_port}", flush=True)
         try:

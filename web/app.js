@@ -1,5 +1,5 @@
 const $ = (selector) => document.querySelector(selector);
-const state = { icons: [], palette: {}, selected: null, category: "全部", mode: "duo", theme: "light", valid: true };
+const state = { icons: [], palette: {}, readonly: false, selected: null, category: "全部", mode: "duo", theme: "light", valid: true };
 const urls = new WeakMap();
 let previewTimer, toastTimer;
 const dirty = () => state.selected && $("#source").value !== state.selected.svg;
@@ -145,12 +145,12 @@ function updatePreview() {
 }
 
 async function save() {
-  if (!dirty() || !state.valid) return;
+  if (state.readonly || !dirty() || !state.valid) return;
   const selected = state.selected;
   const submitted = $("#source").value;
   $("#save").disabled = true;
   try {
-    const icon = await request(`/api/icons/${selected.id}`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ svg: submitted, base: selected.svg }) });
+    const icon = await request(`api/icons/${selected.id}`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ svg: submitted, base: selected.svg }) });
     Object.assign(selected, icon);
     if (state.selected.id === selected.id) { $("#icon-name").textContent = icon.name; updatePreview(); }
     renderCategories(); renderGrid();
@@ -167,7 +167,7 @@ function downloadBlob(blob, filename) {
 
 $("#source").addEventListener("input", () => {
   clearTimeout(previewTimer);
-  $("#save-state").textContent = "● 尚未保存";
+  $("#save-state").textContent = state.readonly ? "● 仅预览" : "● 尚未保存";
   $("#export-ios").disabled = true;
   previewTimer = setTimeout(updatePreview, 180);
 });
@@ -184,7 +184,7 @@ $("#download").onclick = () => downloadBlob(new Blob([renderSvg($("#source").val
 $("#export-ios").onclick = async () => {
   $("#export-ios").disabled = true;
   try {
-    const response = await fetch(`/api/export-ios?mode=${state.mode}`);
+    const response = await fetch(`api/MusubiIcons-${state.mode}.zip`);
     if (!response.ok) throw new Error((await response.json()).error);
     downloadBlob(await response.blob(), `MusubiIcons-${state.mode}.zip`);
     notify(`已导出 ${state.icons.length} 枚${state.mode === "mono" ? "单色" : "原色"}图标，可拖入 Xcode 使用。`);
@@ -215,19 +215,20 @@ $("#create-form").onsubmit = async (event) => {
   const escape = (text) => text.replace(/[<>&"']/g, (char) => ({ "<": "&lt;", ">": "&gt;", "&": "&amp;", '"': "&quot;", "'": "&apos;" })[char]);
   const source = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#453D35" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" data-category="${escape(form.get("category"))}">\n  <title>${escape(form.get("name"))}</title>\n  <rect x="12" y="12" width="24" height="24" rx="6"/>\n</svg>\n`;
   try {
-    const icon = await request(`/api/icons/${form.get("id")}`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ svg: source, base: null }) });
+    const icon = await request(`api/icons/${form.get("id")}`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ svg: source, base: null }) });
     state.icons.push(icon); state.selected = null;
     state.category = "全部"; $("#search").value = "";
     $("#create-dialog").close(); formElement.reset();
     renderCategories(); selectIcon(icon); $("#source").focus(); notify("新源稿已创建，从这枚形状开始画吧。");
   } catch (error) { $("#create-error").textContent = error.message; }
 };
-window.addEventListener("beforeunload", (event) => { if (dirty()) { event.preventDefault(); event.returnValue = ""; } });
+window.addEventListener("beforeunload", (event) => { if (dirty() && !state.readonly) { event.preventDefault(); event.returnValue = ""; } });
 document.addEventListener("keydown", (event) => { if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === "s") { event.preventDefault(); save(); } });
 
 try {
-  const data = await request("/api/icons");
-  state.icons = data.icons; state.palette = data.palette;
+  const data = await request("api/icons");
+  state.icons = data.icons; state.palette = data.palette; state.readonly = !!data.readonly;
+  document.body.classList.toggle("readonly", state.readonly);
   renderCategories();
   if (state.icons.length) selectIcon(state.icons.find((icon) => icon.id === "ramen") || state.icons[0]);
   else { renderGrid(); $("#new-icon").click(); }

@@ -37,6 +37,16 @@ class WorkshopTests(unittest.TestCase):
                         light, dark = [archive.read(str(Path(name).parent / image["filename"])) for image in contents["images"]]
                         self.assertNotEqual(light, dark)
 
+    def test_static_build_is_read_only_and_complete(self):
+        with tempfile.TemporaryDirectory() as folder:
+            server.build_site(folder)
+            data = json.loads((Path(folder) / "api" / "icons").read_text())
+            self.assertTrue(data["readonly"])
+            self.assertEqual(len(data["icons"]), len(list(server.ICON_DIR.glob("*.svg"))))
+            for mode in ("duo", "mono"):
+                self.assertTrue(zipfile.is_zipfile(Path(folder) / "api" / f"MusubiIcons-{mode}.zip"))
+            self.assertTrue((Path(folder) / "index.html").exists())
+
     def test_active_content_and_invalid_geometry_are_rejected(self):
         shell = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">{}</svg>'
         for child in ('<script>alert(1)</script>', '<path onclick="alert(1)"/>', '<image href="https://example.com/a.png"/>', '<path fill="url(https://example.com/a)"/>'):
