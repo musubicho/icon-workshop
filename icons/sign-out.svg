@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#453D35" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" data-category="界面">
+  <title>退出登录</title>
+  <path d="M14 8q-5 0-5 5v22q0 5 5 5h8V8Z" fill="#8A6200" fill-opacity=".12" stroke="none"/>
+  <path d="M22 8h-8q-5 0-5 5v22q0 5 5 5h8"/>
+  <path d="M20 24h20" stroke="#C23B22"/>
+  <path d="m33 17 7 7-7 7" stroke="#C23B22"/>
+</svg>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#453D35" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" data-category="界面">
+  <title>全部显示</title>
+  <rect x="6" y="6" width="36" height="36" rx="9" fill="#8A6200" fill-opacity=".1" stroke="none"/>
+  <path d="M11 26v11h11M26 11h11v11"/>
+  <path d="M15.5 32.5l17-17" stroke="#C23B22"/>
+</svg>

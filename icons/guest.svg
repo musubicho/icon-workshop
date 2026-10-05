@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#453D35" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" data-category="账本">
+  <title>来宾</title>
+  <rect x="6" y="13" width="36" height="30" rx="6"/>
+  <path d="M20 13V9a4 4 0 0 1 8 0v4" stroke="#C23B22"/>
+  <path d="M20 17h8" stroke="#8A6200"/>
+  <circle cx="24" cy="25" r="4" stroke="#C23B22"/>
+  <path d="M16 37c0-4.2 3.4-7 8-7s8 2.8 8 7H16Z" fill="#C23B22" fill-opacity=".12" stroke="#C23B22"/>
+</svg>

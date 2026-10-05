@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#453D35" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" data-category="界面">
+  <title>日期</title>
+  <path d="M7 16q0-6 6-6h22q6 0 6 6v4H7Z" fill="#8A6200" fill-opacity=".16" stroke="none"/>
+  <rect x="7" y="10" width="34" height="31" rx="6"/>
+  <path d="M7 20h34"/>
+  <path d="M16 6v7M32 6v7"/>
+  <rect x="26" y="27" width="8" height="7.5" rx="2.2" fill="#C23B22" fill-opacity=".12" stroke="#C23B22"/>
+</svg>

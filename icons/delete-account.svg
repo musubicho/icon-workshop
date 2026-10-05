@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#453D35" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" data-category="界面">
+  <title>注销账号</title>
+  <circle cx="19" cy="15" r="7"/>
+  <path d="M6 41c0-9 5.6-15 13-15a13 15 0 0 1 6.2 1.8M6 41h19.8"/>
+  <circle cx="35" cy="34" r="8" fill="#C23B22" fill-opacity=".12" stroke="#C23B22"/>
+  <path d="m32 31 6 6M38 31l-6 6" stroke="#C23B22"/>
+</svg>

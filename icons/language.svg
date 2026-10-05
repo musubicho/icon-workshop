@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#453D35" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" data-category="界面">
+  <title>语言</title>
+  <circle cx="24" cy="24" r="18"/>
+  <path d="M6 24h36"/>
+  <path d="M24 6c-5 5-7.5 11-7.5 18S19 37 24 42c5-5 7.5-11 7.5-18S29 11 24 6Z" stroke="#C23B22"/>
+  <path d="M9.5 14h29M9.5 34h29"/>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#453D35" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" data-category="日常">
+  <title>充值</title>
+  <rect x="3" y="8.5" width="33" height="23" rx="4.5"/>
+  <path d="M8.5 15h9M8.5 25h5" stroke="#C23B22"/>
+  <path d="M24 16.5q2.6 3.5 0 7M28.5 14q5.2 6 0 12" stroke="#8A6200"/>
+  <circle cx="38.5" cy="39" r="7" fill="#C23B22" fill-opacity=".12" stroke="#C23B22"/>
+  <path d="M38.5 35.5v7M35 39h7" stroke="#C23B22"/>
+</svg>

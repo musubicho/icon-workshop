@@ -6,9 +6,9 @@
 
 <p align="center">Soft shapes for everyday things.<br />把小事，画成图标。</p>
 
-A collection of **33 SVG originals** and a local workshop for refining them one at a time. Created for [Musubicho](https://github.com/musubicho), with the same shapes available for Web and native iOS.
+A collection of **90 SVG originals** and a local workshop for refining them one at a time. Created for [Musubicho](https://github.com/musubicho), with the same shapes available for Web and native iOS.
 
-Rounded outlines, warm ink, vermilion, gold, and matcha green. The collection covers all **24 expense categories** and **7 itinerary types** used in Musubicho, plus ledger, receipt, wallet, split, transfer, and knot motifs.
+Rounded outlines, warm ink, vermilion, gold, and matcha green. The collection covers all **24 expense categories** and **7 itinerary types** used in Musubicho, plus ledger, receipt, wallet, split, transfer, and knot motifs, and the interface icons that replace SF Symbols in the app's menus, rows, and empty states.
 
 ![The complete icon collection](docs/images/icons.png)
 
@@ -123,10 +123,11 @@ Custom colors retain their original values in color previews and exports, so che
 
 | Collection | Icons |
 | --- | --- |
-| Ledger · 账本 | Ledger, receipt, split, transfer, wallet |
+| Ledger · 账本 | Guest, ledger, receipt, split, transfer, wallet |
 | Food · 饮食 | Groceries, matcha, onigiri, ramen, sake, taiyaki, takeout |
-| Travel · 旅途 | Bus, drive, gift, lodging, passport, pin, plane, sight, taxi, ticket, train |
-| Everyday · 日常 | Entertainment, medicine, other, rent, shopping, SIM, subscription, tissue, utilities |
+| Travel · 旅途 | Bus, drive, gift, lodging, passport, pin, plane, sight, taxi, ticket, train, walk |
+| Everyday · 日常 | Entertainment, medicine, other, rent, shopping, SIM, subscription, tissue, top-up, utilities |
+| Interface · 界面 | Calendar, camera, chats, clear, clock, cloud, copy, database, delete account, developer, device, directions, done, edit, failed, filter, fit, folder, forget, hide, info, invite, language, later, layers, link, list, locate, map, memory, model, nearby, note, photo, privacy, profile, refresh, reschedule, scan, schedule, seal, search, settings, share, sheet, sign out, sparkle, stats, storage, swap, trash, undo, usage, want |
 | Knot · 结与印 | Knot |
 
 ## Project files and checks

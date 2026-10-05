@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#453D35" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" data-category="界面">
+  <title>编辑</title>
+  <path d="M31 9.5q2-2 4 0l3.5 3.5q2 2 0 4L35 20.5 27.5 13Z" fill="#C23B22" fill-opacity=".12" stroke="#C23B22"/>
+  <path d="M14 30.5 20.5 37 9 40.5Z" fill="#8A6200" fill-opacity=".16" stroke="none"/>
+  <path d="M27.5 13 35 20.5 20.5 37 9 40.5 12.5 29Z"/>
+  <path d="M12.5 29 20.5 37"/>
+  <path d="M27 40.5h12" stroke="#8A6200"/>
+</svg>

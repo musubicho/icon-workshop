@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#453D35" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" data-category="界面">
+  <title>文件夹</title>
+  <path d="M6 15q0-5 5-5h8q2.2 0 3.6 1.6L25 14.5h12q5 0 5 5V21H6Z" fill="#8A6200" fill-opacity=".16" stroke="none"/>
+  <path d="M6 15q0-5 5-5h8q2.2 0 3.6 1.6L25 14.5h12q5 0 5 5V34q0 5-5 5H11q-5 0-5-5Z"/>
+  <path d="M6 21h36"/>
+  <path d="M18 30.5h12" stroke="#C23B22"/>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#453D35" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" data-category="界面">
+  <title>删除</title>
+  <path d="M11.5 14h25l-2 23q-.4 5-5.4 5H18.9q-5 0-5.4-5Z" fill="#8A6200" fill-opacity=".12" stroke="none"/>
+  <path d="M8 14h32M11.5 14l2 23q.4 5 5.4 5h10.2q5 0 5.4-5l2-23"/>
+  <path d="M19 14v-3q0-4 4-4h2q4 0 4 4v3" stroke="#C23B22"/>
+  <path d="M21 21v14M27 21v14" stroke="#8A6200"/>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#453D35" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" data-category="界面">
+  <title>拍照</title>
+  <path d="M6 19q0-5 5-5h5l2.8-4q1.2-1.5 3.2-1.5h4q2 0 3.2 1.5L32 14h5q5 0 5 5v4H6Z" fill="#8A6200" fill-opacity=".14" stroke="none"/>
+  <path d="M6 19q0-5 5-5h5l2.8-4q1.2-1.5 3.2-1.5h4q2 0 3.2 1.5L32 14h5q5 0 5 5v15q0 5-5 5H11q-5 0-5-5Z"/>
+  <circle cx="24" cy="26.5" r="7" fill="#C23B22" fill-opacity=".12" stroke="#C23B22"/>
+  <circle cx="35.5" cy="20.5" r="1.5" fill="#8A6200" stroke="none"/>
+</svg>
