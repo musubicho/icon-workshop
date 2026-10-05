@@ -1,94 +1,66 @@
 <p align="center">
-  <img src="web/seal.svg" width="64" height="64" alt="結" />
+  <img src="static/brand/nyatabi.webp" width="72" height="72" alt="" />
 </p>
 
-<h1 align="center">結 · Icon Atelier</h1>
+<h1 align="center">Nyatabi Icons</h1>
 
-<p align="center">Soft shapes for everyday things.<br />把小事，画成图标。</p>
+<p align="center">把旅途里的小事，画成图标。<br />Soft shapes for everyday things.</p>
 
-A collection of **90 SVG originals** and a local workshop for refining them one at a time. Created for [Musubicho](https://github.com/musubicho), with the same shapes available for Web and native iOS.
+A collection of **92 SVG originals** drawn for [Nyatabi](https://nyatabi.app), with the same shapes available for Web and native iOS. Browse them at **<https://icons.nyatabi.app>**.
 
-Rounded outlines, warm ink, vermilion, gold, and matcha green. The collection covers all **24 expense categories** and **7 itinerary types** used in Musubicho, plus ledger, receipt, wallet, split, transfer, and knot motifs, and the interface icons that replace SF Symbols in the app's menus, rows, and empty states.
+Rounded outlines, warm ink, vermilion, gold, and matcha green. The collection covers the expense categories and itinerary types used in Nyatabi, ledger, receipt, wallet, split, transfer, and knot motifs, and the interface icons that replace SF Symbols in the app's menus, rows, and empty states. The site's own interface uses only icons from this collection.
 
 ![The complete icon collection](docs/images/icons.png)
 
-## The workshop
+## The site
 
-- Browse and search by name, filename, or collection.
-- Edit SVG source with live previews at **16, 20, 24, 32, and 48 px**.
-- Check original colors or monochrome in light and dark appearances.
-- Save directly to `icons/`, with checks that protect edits made in another editor.
-- Download one SVG or export the entire collection as an Xcode asset catalog.
+- Search by name, ID, or collection; press <kbd>/</kbd> to focus the search box.
+- Switch the grid between original colors and monochrome, and the whole site between light and dark.
+- Each icon has its own page at `/icon/<id>`: light and dark previews, sizes from 16 to 48 px, copy or download the SVG in original colors or as `currentColor`.
+- Export the entire collection as an Xcode asset catalog.
 
-![The local SVG workshop](docs/images/workshop.png)
-
-## Online preview
-
-A read-only copy is published at **<https://musubicho.github.io/icon-workshop/>** on every push to `main`. You can browse, preview, download SVGs and export the iOS asset catalog there; saving and adding icons need the local workshop.
-
-To build the same static copy yourself:
-
-```sh
-python3 server.py --build _site
-```
+The site is a SvelteKit app prerendered to static files. Editing is only available in the local dev server.
 
 ## Run locally
 
-Requires **Python 3.10+** and a modern browser. No packages or build step are needed.
+Requires **Node.js 22.17+** and **pnpm**.
 
 ```sh
 git clone https://github.com/musubicho/icon-workshop.git
 cd icon-workshop
-python3 server.py
+pnpm install
+pnpm dev
 ```
 
-Open **<http://127.0.0.1:4173>**. To use another port:
-
-```sh
-python3 server.py --port 4174
-```
-
-The server binds to localhost. Editing and exporting happen on your computer, with no cloud service or AI calls. The workshop UI is currently in Chinese.
+Open the URL Vite prints (port **4173** by default). The dev server binds to localhost, and its save endpoint only accepts same-origin requests from `localhost` or `127.0.0.1`.
 
 ## Refine an icon
 
-1. Select an icon and edit its **SVG 源稿** (SVG source). The large preview and size strip update as you type.
-2. Switch **原色 / 单色** (original / monochrome) and the light / dark toggle to check contrast and small-size clarity.
-3. Click **保存修改** (save), or press **⌘S / Ctrl+S**. Originals remain in `icons/*.svg`.
-4. Use **下载 SVG** to download the current preview, or **导出 iOS 资源** to export all saved icons.
+1. Open an icon's page. In dev mode, the **SVG 源稿** editor appears in the side panel; previews update as you type.
+2. Click **保存修改** or press **⌘S / Ctrl+S** to write the file in `icons/`.
+3. Use **添一枚图标** on the home page to create a new source file. IDs start with a lowercase letter and contain only lowercase letters, digits, and hyphens, up to 64 characters. The ID becomes the filename and iOS resource name.
 
-Use **添一枚图标** to create a new source file. IDs start with a lowercase letter and contain only lowercase letters, digits, and hyphens, up to 64 characters. The ID becomes the filename and iOS resource name.
-
-You can also edit files in an external vector editor and refresh the workshop. If a file has changed elsewhere, saving reports a conflict and leaves that file intact.
-
-> [!NOTE]
-> Individual SVG downloads include the current preview, including unsaved edits. The iOS export uses saved originals; save your changes before exporting.
+You can also edit files in an external vector editor. If a file has changed elsewhere, saving reports a conflict and leaves that file intact.
 
 ## Use on the Web
 
-Use an original from `icons/`, or a downloaded SVG with the chosen colors and appearance:
+Use an original from `icons/`:
 
 ```html
 <img src="/icons/ramen.svg" width="24" height="24" alt="" />
 ```
 
-For an icon that follows text color, download a monochrome SVG and use it as a CSS mask:
+For an icon that follows text color, choose **单色 currentColor** on the icon's page, then copy or download it and inline the SVG:
 
-```css
-.icon {
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-  background-color: currentColor;
-  mask: url("/icons/ramen-mono-light.svg") center / contain no-repeat;
-}
+```html
+<button><svg …>…</svg> 拉面</button>
 ```
 
-Provide an accessible label when an icon conveys meaning on its own. A downloaded original-color SVG contains the selected appearance; choose the appropriate light or dark file in your application.
+Provide an accessible label when an icon conveys meaning on its own.
 
 ## Use on iOS
 
-Choose **原色** or **单色**, then click **导出 iOS 资源**. Unzip the download and add `MusubiIcons.xcassets` to your app target in Xcode.
+Choose **原色** or **单色** in the toolbar, then click **导出 iOS 资源**. Unzip the download and add `MusubiIcons.xcassets` to your app target in Xcode.
 
 | Export | Native behavior |
 | --- | --- |
@@ -137,18 +109,32 @@ Custom colors retain their original values in color previews and exports, so che
 | Food · 饮食 | Groceries, matcha, onigiri, ramen, sake, taiyaki, takeout |
 | Travel · 旅途 | Bus, drive, gift, lodging, passport, pin, plane, sight, taxi, ticket, train, walk |
 | Everyday · 日常 | Entertainment, medicine, other, rent, shopping, SIM, subscription, tissue, top-up, utilities |
-| Interface · 界面 | Calendar, camera, chats, clear, clock, cloud, copy, database, delete account, developer, device, directions, done, edit, failed, filter, fit, folder, forget, hide, info, invite, language, later, layers, link, list, locate, map, memory, model, nearby, note, photo, privacy, profile, refresh, reschedule, scan, schedule, seal, search, settings, share, sheet, sign out, sparkle, stats, storage, swap, trash, undo, usage, want |
+| Interface · 界面 | Appearance, calendar, camera, chats, clear, clock, cloud, copy, database, delete account, developer, device, directions, done, download, edit, failed, filter, fit, folder, forget, hide, info, invite, language, later, layers, link, list, locate, map, memory, model, nearby, note, photo, privacy, profile, refresh, reschedule, scan, schedule, seal, search, settings, share, sheet, sign out, sparkle, stats, storage, swap, trash, undo, usage, want |
 | Knot · 结与印 | Knot |
 
 ## Project files and checks
 
 | Path | Purpose |
 | --- | --- |
-| `icons/` | Editable SVG originals; the source of all exports |
-| `web/` | Browser UI, styles, and preview logic |
-| `server.py` | Python standard-library server, validation, saving, and iOS export |
-| `test_workshop.py` | Save-conflict, SVG-validation, and asset-export checks |
+| `icons/` | Editable SVG originals; the source of all pages and exports |
+| `src/lib/svg.ts` | Validation, themable markup, and color exports |
+| `src/lib/server/ios.ts` | Xcode asset catalog export |
+| `src/lib/server/atelier.ts` | Dev-only save endpoint (Vite plugin) |
+| `src/routes/` | Home, icon pages, and the prerendered `MusubiIcons-<mode>.zip` |
 
 ```sh
-python3 -m unittest -v
+pnpm test    # validation, save conflicts, and asset export
+pnpm check   # svelte-check
+pnpm build   # static site in build/
 ```
+
+## Deploy
+
+Cloudflare Pages builds from GitHub on every push to `main`:
+
+| Setting | Value |
+| --- | --- |
+| Build command | `pnpm test && pnpm build` |
+| Output directory | `build` |
+| Environment | `PNPM_VERSION=12.4.1` (Node comes from `.node-version`) |
+| Custom domain | `icons.nyatabi.app` |
