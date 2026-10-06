@@ -3,6 +3,7 @@
 	import Hero from '#lib/Hero.svelte';
 	import Icon from '#lib/Icon.svelte';
 	import NewIcon from '#lib/NewIcon.svelte';
+	import Segmented from '#lib/Segmented.svelte';
 	import { categories, glyph, icons } from '#lib/icons.ts';
 	import { prefs } from '#lib/prefs.svelte.ts';
 
@@ -47,10 +48,15 @@
 				</button>
 			{/each}
 		</div>
-		<div class="segmented" role="group" aria-label="アイコンのスタイル">
-			<button type="button" aria-pressed={!prefs.mono} onclick={() => (prefs.mono = false)}>カラー</button>
-			<button type="button" aria-pressed={prefs.mono} onclick={() => (prefs.mono = true)}>モノクロ</button>
-		</div>
+		<Segmented
+			label="アイコンのスタイル"
+			value={prefs.mono ? 'mono' : 'color'}
+			options={[
+				{ id: 'color', label: 'カラー' },
+				{ id: 'mono', label: 'モノクロ' }
+			]}
+			select={(id) => (prefs.mono = id === 'mono')}
+		/>
 		{#if dev}<NewIcon />{/if}
 	</div>
 </div>

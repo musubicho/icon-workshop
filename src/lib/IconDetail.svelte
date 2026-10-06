@@ -3,6 +3,7 @@
 	import { dev } from '$app/env';
 	import Icon from './Icon.svelte';
 	import IconStage from './IconStage.svelte';
+	import Segmented from './Segmented.svelte';
 	import { glyph, icons, type Icon as IconData } from './icons.ts';
 	import { exportSvg, themable } from './svg.ts';
 
@@ -51,10 +52,15 @@
 			<span class="mono-text id">{icon.id} · musubi-{icon.id}</span>
 			{#if icon.desc}<p>{icon.desc}</p>{/if}
 		</div>
-		<div class="segmented" role="group" aria-label="書き出しスタイル">
-			<button type="button" aria-pressed={!current} onclick={() => (current = false)}>カラー</button>
-			<button type="button" aria-pressed={current} onclick={() => (current = true)}>モノクロ currentColor</button>
-		</div>
+		<Segmented
+			label="書き出しスタイル"
+			value={current ? 'current' : 'color'}
+			options={[
+				{ id: 'color', label: 'カラー' },
+				{ id: 'current', label: 'モノクロ currentColor' }
+			]}
+			select={(id) => (current = id === 'current')}
+		/>
 		<div class="actions">
 			<button type="button" class="button primary" onclick={() => copy(output, 'SVG をコピーしました。')}>
 				<Icon markup={glyph('copy')} size={22} glyph />SVG をコピー
