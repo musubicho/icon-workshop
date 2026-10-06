@@ -4,7 +4,7 @@
 
 <h1 align="center">Nyatabi Icons</h1>
 
-<p align="center">把旅途里的小事，画成图标。<br />Soft shapes for everyday things.</p>
+<p align="center">Turn the small things of a journey into icons.<br />Soft shapes for everyday things.</p>
 
 A collection of **93 SVG originals** drawn for [Nyatabi](https://nyatabi.app), with the same shapes available for Web and native iOS. Browse them at **<https://icons.nyatabi.app>**.
 
@@ -38,9 +38,9 @@ Open the URL Vite prints (port **4173** by default). The dev server binds to loc
 
 Read the drawing rules in [docs/icon-guidelines.md](docs/icon-guidelines.md) first: stroke width, palette, spacing between lines, and the self-check before each change.
 
-1. Open an icon's page. In dev mode, the **SVG 源稿** editor appears in the side panel; previews update as you type.
-2. Click **保存修改** or press **⌘S / Ctrl+S** to write the file in `icons/`.
-3. Use **添一枚图标** on the home page to create a new source file. IDs start with a lowercase letter and contain only lowercase letters, digits, and hyphens, up to 64 characters. The ID becomes the filename and iOS resource name.
+1. Open an icon's page. In dev mode, the **SVG source** editor appears in the side panel; previews update as you type.
+2. Click **Save changes** or press **⌘S / Ctrl+S** to write the file in `icons/`.
+3. Use **Add an icon** on the home page to create a new source file. IDs start with a lowercase letter and contain only lowercase letters, digits, and hyphens, up to 64 characters. The ID becomes the filename and iOS resource name.
 
 You can also edit files in an external vector editor. If a file has changed elsewhere, saving reports a conflict and leaves that file intact.
 
@@ -52,17 +52,17 @@ Use an original from `icons/`:
 <img src="/icons/ramen.svg" width="24" height="24" alt="" />
 ```
 
-For an icon that follows text color, choose **单色 currentColor** on the icon's page, then copy or download it and inline the SVG:
+For an icon that follows text color, choose **Monochrome currentColor** on the icon's page, then copy or download it and inline the SVG:
 
 ```html
-<button><svg …>…</svg> 拉面</button>
+<button><svg …>…</svg> Ramen</button>
 ```
 
 Provide an accessible label when an icon conveys meaning on its own.
 
 ## Use on iOS
 
-Choose **原色** or **单色** in the toolbar, then click **导出 iOS 资源**. Unzip the download and add `MusubiIcons.xcassets` to your app target in Xcode.
+Choose **Color** or **Monochrome** in the toolbar, then click **Export iOS assets**. Unzip the download and add `MusubiIcons.xcassets` to your app target in Xcode.
 
 | Export | Native behavior |
 | --- | --- |
@@ -107,12 +107,12 @@ Custom colors retain their original values in color previews and exports, so che
 
 | Collection | Icons |
 | --- | --- |
-| Ledger · 账本 | Guest, ledger, receipt, split, transfer, wallet |
-| Food · 饮食 | Groceries, matcha, onigiri, pudding, ramen, sake, takeout |
-| Travel · 旅途 | Bus, drive, gift, lodging, passport, pin, plane, sight, taxi, ticket, train, walk |
-| Everyday · 日常 | Entertainment, medicine, other, rent, shopping, SIM, subscription, tissue, top-up, utilities |
-| Interface · 界面 | Appearance, calendar, camera, chats, clear, clock, cloud, copy, database, delete account, developer, device, directions, done, download, edit, failed, filter, fit, folder, forget, hide, info, invite, language, later, layers, link, list, locate, map, memory, model, nearby, note, photo, privacy, profile, refresh, reschedule, scan, schedule, seal, search, settings, share, sheet, sign out, sparkle, stats, storage, swap, trash, undo, usage, want |
-| Knot · 结与印 | Knot |
+| Ledger | Guest, ledger, receipt, split, transfer, wallet |
+| Food | Groceries, matcha, onigiri, pudding, ramen, sake, takeout |
+| Travel | Bus, drive, gift, lodging, passport, pin, plane, sight, taxi, ticket, train, walk |
+| Everyday | Entertainment, medicine, other, rent, shopping, SIM, subscription, tissue, top-up, utilities |
+| Interface | Appearance, calendar, camera, chats, clear, clock, cloud, copy, database, delete account, developer, device, directions, done, download, edit, failed, filter, fit, folder, forget, hide, info, invite, language, later, layers, link, list, locate, map, memory, model, nearby, note, photo, privacy, profile, refresh, reschedule, scan, schedule, seal, search, settings, share, sheet, sign out, sparkle, stats, storage, swap, trash, undo, usage, want |
+| Knot | Knot |
 
 ## Project files and checks
 

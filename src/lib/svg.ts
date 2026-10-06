@@ -23,7 +23,7 @@ export function iconInfo(id: string, source: string) {
 		id,
 		name: text(source, 'title') || id,
 		desc: text(source, 'desc'),
-		category: source.match(/data-category="([^"]+)"/)?.[1] ?? '其他'
+		category: source.match(/data-category="([^"]+)"/)?.[1] ?? 'その他'
 	};
 }
 

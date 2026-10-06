@@ -7,13 +7,13 @@
 	import { prefs } from '#lib/prefs.svelte.ts';
 
 	let query = $state('');
-	let category = $state('全部');
+	let category = $state('すべて');
 	let search: HTMLInputElement;
 
 	const visible = $derived.by(() => {
 		const q = query.trim().toLowerCase();
 		return icons.filter(
-			(icon) => (category === '全部' || icon.category === category) && `${icon.name} ${icon.id} ${icon.category}`.toLowerCase().includes(q)
+			(icon) => (category === 'すべて' || icon.category === category) && `${icon.name} ${icon.id} ${icon.category}`.toLowerCase().includes(q)
 		);
 	});
 
@@ -27,8 +27,8 @@
 
 <svelte:window onkeydown={focusSearch} />
 <svelte:head>
-	<title>Nyatabi Icons · 把旅途里的小事，画成图标</title>
-	<meta name="description" content="Nyatabi 账本和行程里用的圆润线条图标：SVG 源稿与 iOS 资源导出。" />
+	<title>Nyatabi Icons · 旅の小さなことを、アイコンにする</title>
+	<meta name="description" content="Nyatabi の帳簿と旅程で使う、丸みのある線のアイコン。SVG 原稿と iOS アセットの書き出し。" />
 </svelte:head>
 
 <Hero />
@@ -37,19 +37,19 @@
 	<div class="wrap row">
 		<label class="search">
 			<Icon markup={glyph('search')} size={22} glyph />
-			<input bind:this={search} bind:value={query} type="search" placeholder="找一枚图标：拉面、ramen、电车…" aria-label="搜索图标" />
+			<input bind:this={search} bind:value={query} type="search" placeholder="アイコンを探す：ラーメン、ramen、電車…" aria-label="アイコンを検索" />
 			<kbd class="mono-text">/</kbd>
 		</label>
-		<div class="chips" role="group" aria-label="分类">
-			{#each [{ name: '全部', count: icons.length }, ...categories] as item (item.name)}
+		<div class="chips" role="group" aria-label="分類">
+			{#each [{ name: 'すべて', count: icons.length }, ...categories] as item (item.name)}
 				<button type="button" aria-pressed={category === item.name} onclick={() => (category = item.name)}>
 					{item.name} <span class="mono-text">{item.count}</span>
 				</button>
 			{/each}
 		</div>
-		<div class="segmented" role="group" aria-label="图标样式">
-			<button type="button" aria-pressed={!prefs.mono} onclick={() => (prefs.mono = false)}>原色</button>
-			<button type="button" aria-pressed={prefs.mono} onclick={() => (prefs.mono = true)}>单色</button>
+		<div class="segmented" role="group" aria-label="アイコンのスタイル">
+			<button type="button" aria-pressed={!prefs.mono} onclick={() => (prefs.mono = false)}>カラー</button>
+			<button type="button" aria-pressed={prefs.mono} onclick={() => (prefs.mono = true)}>モノクロ</button>
 		</div>
 		{#if dev}<NewIcon />{/if}
 	</div>
@@ -57,7 +57,7 @@
 
 <main class="wrap shelf">
 	<div class="shelf-head">
-		<h2>{category === '全部' ? '全部图标' : category}</h2>
+		<h2>{category === 'すべて' ? 'すべてのアイコン' : category}</h2>
 		<span class="mono-text">{visible.length} / {icons.length}</span>
 	</div>
 	{#if visible.length}
@@ -71,15 +71,15 @@
 			{/each}
 		</div>
 	{:else}
-		<p class="empty">还没有这一枚。试试其他关键词。</p>
+		<p class="empty">見つかりません。別の言葉で試してください。</p>
 	{/if}
 </main>
 
 <section class="usage">
 	<div class="wrap usage-grid">
-		<div><span class="mono-text">01 · WEB</span><strong>复制 SVG</strong><p>48 × 48 网格，2.4 描边，直接贴进组件。</p></div>
-		<div><span class="mono-text">02 · iOS</span><strong>导出 .xcassets</strong><p>原色带深色外观；单色走 template 渲染，跟随 tint。</p></div>
-		<div><span class="mono-text">03 · SOURCE</span><strong>本地打磨</strong><p><code class="mono-text">pnpm dev</code> 打开工坊模式，编辑后写回 icons/。</p></div>
+		<div><span class="mono-text">01 · WEB</span><strong>SVG をコピー</strong><p>48 × 48 のグリッド、線幅 2.4。そのままコンポーネントに貼れます。</p></div>
+		<div><span class="mono-text">02 · iOS</span><strong>.xcassets を書き出す</strong><p>カラーはダーク表示付き。モノクロは template 描画で tint に従います。</p></div>
+		<div><span class="mono-text">03 · SOURCE</span><strong>手元で磨く</strong><p><code class="mono-text">pnpm dev</code> で工房モードを開き、編集は icons/ に書き戻します。</p></div>
 	</div>
 </section>
 

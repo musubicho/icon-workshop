@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#453D35" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" data-category="饮食">
-  <title>饭团</title>
-  <desc>软圆的米饭轮廓，一片海苔和五粒米。</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#453D35" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" data-category="食事">
+  <title>おにぎり</title>
+  <desc>ふっくらしたご飯の輪郭に、海苔と五粒の米。</desc>
   <path d="M21 7c2-3 5-3 7 0l14 25c3 5 1 9-5 9H11c-6 0-8-4-5-9L21 7Z"/>
   <rect x="17" y="27" width="14" height="10.4" rx="2.5" fill="#53765A" fill-opacity=".16" stroke="#53765A"/>
   <path d="M13.9 26.3h.1M20 18h.1M32.6 22.6h.1M28 15h.1M12 32h.1"/>

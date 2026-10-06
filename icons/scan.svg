@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#453D35" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" data-category="界面">
-  <title>识别</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#453D35" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" data-category="画面">
+  <title>読み取り</title>
   <path d="M7 16v-5q0-4 4-4h5M32 7h5q4 0 4 4v5M41 32v5q0 4-4 4h-5M16 41h-5q-4 0-4-4v-5"/>
   <path d="M18.5 13h11q2 0 2 2v19l-2.5-1.5-2.5 1.5-2.5-1.5-2.5 1.5-2.5-1.5-2.5 1.5V15q0-2 2-2Z" stroke="#8A6200"/>
   <path d="M21 19h6M21 23.5h3.5" stroke="#8A6200"/>

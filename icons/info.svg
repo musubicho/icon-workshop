@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#453D35" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" data-category="界面">
-  <title>版本</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#453D35" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" data-category="画面">
+  <title>バージョン</title>
   <circle cx="24" cy="24" r="18" fill="#8A6200" fill-opacity=".12"/>
   <path d="M24 22v11" stroke="#C23B22"/>
   <circle cx="24" cy="15.5" r="1.6" fill="#C23B22" stroke="none"/>

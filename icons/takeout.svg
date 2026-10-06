@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#453D35" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" data-category="饮食">
-  <title>外卖</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#453D35" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" data-category="食事">
+  <title>テイクアウト</title>
   <rect x="7" y="18" width="34" height="24" rx="7"/>
   <path d="M16 18v-5a8 8 0 0 1 16 0v5M7 26h34"/>
   <path d="M14 34h9M14 38h6" stroke="#C23B22"/>

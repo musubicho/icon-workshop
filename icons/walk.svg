@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#453D35" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" data-category="旅途">
-  <title>步行</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#453D35" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" data-category="旅">
+  <title>徒歩</title>
   <circle cx="28" cy="9.5" r="4.2" fill="#C23B22" fill-opacity=".12" stroke="#C23B22"/>
   <path d="M27 17.5q-2.2 6-3.8 11.5l5.3 5 1.5 7.5"/>
   <path d="m23.2 29-5.2 12"/>

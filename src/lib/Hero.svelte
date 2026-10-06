@@ -14,13 +14,13 @@
 <section class="wrap hero">
 	<div class="copy">
 		<span class="pill mono-text">{icons.length} ICONS · SVG · iOS ASSET CATALOG</span>
-		<h1>把旅途里的小事，<br /><em>画成图标。</em></h1>
-		<p>Nyatabi 账本和行程里用的同一套圆润线条图标：拉面、电车、分摊、小票。复制 SVG 直接用，或者一键导出 Xcode 资源。</p>
+		<h1>旅の小さなことを、<br /><em>アイコンにする。</em></h1>
+		<p>Nyatabi の帳簿と旅程で使う、同じ丸みのある線のアイコン。ラーメン、電車、割り勘、レシート。SVG をコピーしてそのまま使うか、Xcode のアセットを一度に書き出します。</p>
 		<div class="actions">
-			<a class="button primary" href="#icons">浏览全部图标</a>
+			<a class="button primary" href="#icons">すべてのアイコンを見る</a>
 			<a class="button" href="/MusubiIcons-{prefs.mono ? 'mono' : 'duo'}.zip" download>
 				<Icon markup={glyph('device')} size={22} glyph />
-				导出 iOS 资源
+				iOS アセットを書き出す
 			</a>
 		</div>
 	</div>

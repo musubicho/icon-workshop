@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#453D35" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" data-category="旅途">
-  <title>自驾</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#453D35" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" data-category="旅">
+  <title>ドライブ</title>
   <circle cx="24" cy="24" r="17"/>
   <path d="M9 18q15-6 30 0M 8,23 L 15.43,25.7M 40,23 L 32.57,25.7M 20.31,32.77 L 19,40M 27.69,32.77 L 29,40"/>
   <circle cx="24" cy="25" r="5" fill="#C23B22" fill-opacity=".12" stroke="#C23B22"/>

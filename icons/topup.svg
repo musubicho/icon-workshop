@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#453D35" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" data-category="日常">
-  <title>充值</title>
+  <title>チャージ</title>
   <path d="M25 33H10q-5 0-5-5V14q0-5 5-5h24q5 0 5 5v10.3"/>
   <rect x="10" y="14.5" width="7" height="5.5" rx="1.6" stroke="#8A6200"/>
   <path d="M10 27h8M25 16.5q2.2 3.2 0 6.4M29 14.5q4 5.2 0 10.4"/>

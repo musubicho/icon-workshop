@@ -4,18 +4,18 @@
 	let { id, name, markup }: { id: string; name: string; markup: string } = $props();
 
 	const variants = [
-		{ label: '原色 · 浅', tone: 'light', mono: false },
-		{ label: '单色 · 浅', tone: 'light', mono: true },
-		{ label: '原色 · 深', tone: 'dark', mono: false },
-		{ label: '单色 · 深', tone: 'dark', mono: true }
+		{ label: 'カラー · ライト', tone: 'light', mono: false },
+		{ label: 'モノクロ · ライト', tone: 'light', mono: true },
+		{ label: 'カラー · ダーク', tone: 'dark', mono: false },
+		{ label: 'モノクロ · ダーク', tone: 'dark', mono: true }
 	];
 	const moments: Record<string, string> = {
-		ramen: '一碗热乎的拉面',
-		matcha: '街角的一杯抹茶',
-		train: '坐电车去下一站',
-		plane: '出发，去新的地方',
-		lodging: '今晚住在这里',
-		gift: '带一份小小的手信'
+		ramen: 'あつあつのラーメン',
+		matcha: '街角の抹茶',
+		train: '電車で次の駅へ',
+		plane: '新しい場所へ、出発',
+		lodging: '今夜はここに泊まる',
+		gift: '小さな手土産をひとつ'
 	};
 </script>
 
@@ -30,7 +30,7 @@
 	</div>
 	<div class="panels">
 		<div class="panel">
-			<span class="label">实际尺寸</span>
+			<span class="label">実寸</span>
 			<div class="sizes">
 				{#each [16, 20, 24, 32, 48] as size (size)}
 					<span class="mono-text"><Icon {markup} {size} />{size}</span>
@@ -38,10 +38,10 @@
 			</div>
 		</div>
 		<div class="panel">
-			<span class="label">放回账本里</span>
+			<span class="label">帳簿に戻す</span>
 			<div class="entry">
 				<span class="entry-icon"><Icon {markup} size={32} /></span>
-				<span class="entry-text"><strong>{moments[id] ?? `${name} · 一笔日常`}</strong><small>今天 12:30 · 2 人分摊</small></span>
+				<span class="entry-text"><strong>{moments[id] ?? `${name} · いつもの一筆`}</strong><small>今日 12:30 · 2人で割り勘</small></span>
 				<strong class="mono-text">¥1,280</strong>
 			</div>
 		</div>

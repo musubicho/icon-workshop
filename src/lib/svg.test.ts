@@ -22,7 +22,7 @@ test('active content and invalid geometry are rejected', () => {
 	}
 	expect(() => validate(shell('<path/>').replace('48 48', '0 48'))).toThrow('viewBox');
 	expect(() => validate('<svg viewBox="0 0 48 48"><path/></svg>')).toThrow();
-	expect(() => validate('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path></svg>')).toThrow('格式');
+	expect(() => validate('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path></svg>')).toThrow('形式');
 	expect(() => validate('<!DOCTYPE svg><svg/>')).toThrow('DTD');
 });
 

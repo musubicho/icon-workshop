@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#453D35" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" data-category="界面">
-  <title>深浅色</title>
-  <desc>一半白天，一半夜晚。</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#453D35" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" data-category="画面">
+  <title>外観</title>
+  <desc>昼と夜が半分ずつ。</desc>
   <circle cx="24" cy="24" r="17"/>
   <path d="M24 7a17 17 0 0 1 0 34Z" fill="#453D35" stroke="none"/>
   <path d="M15 19.5a9 9 0 0 1 4-4" stroke="#8A6200"/>

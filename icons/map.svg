@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#453D35" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" data-category="界面">
-  <title>地图</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#453D35" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" data-category="画面">
+  <title>地図</title>
   <path d="M17 15 31 9v24l-14 6Z" fill="#8A6200" fill-opacity=".14" stroke="none"/>
   <path d="M7 11.5 17 15l14-6 10 3.5v24L31 33l-14 6-10-3.5Z"/>
   <path d="M17 15v24M31 9v24"/>

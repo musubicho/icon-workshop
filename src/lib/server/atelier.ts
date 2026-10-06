@@ -8,15 +8,15 @@ export class ConflictError extends Error {}
 
 export function saveIcon(dir: string, slug: string, source: unknown, base: unknown) {
 	if (!/^[a-z][a-z0-9-]{0,63}$/.test(slug)) {
-		throw new Error('名称需以小写字母开头，仅含小写字母、数字和短横线，最多 64 个字符。');
+		throw new Error('名前は小文字の英字で始め、小文字、数字、ハイフンのみ、最大 64 文字です。');
 	}
 	const svg = validate(source);
 	const file = path.join(dir, `${slug}.svg`);
 	const exists = existsSync(file);
 	if (exists && readFileSync(file, 'utf8') !== base) {
-		throw new ConflictError('源文件已在别处修改，或名称已存在。请保留当前代码，刷新后合并。');
+		throw new ConflictError('元ファイルが別の場所で変更されたか、同じ名前が既にあります。今のコードは残し、更新してからマージしてください。');
 	}
-	if (!exists && base != null) throw new ConflictError('源文件已在别处移走。请保留当前代码，刷新后检查。');
+	if (!exists && base != null) throw new ConflictError('元ファイルが別の場所へ移されました。今のコードは残し、更新して確認してください。');
 	const temp = `${file}.${process.pid}.tmp`;
 	try {
 		writeFileSync(temp, svg);
@@ -37,12 +37,12 @@ function isLocal(req: IncomingMessage) {
 async function readJson(req: IncomingMessage) {
 	const length = Number(req.headers['content-length'] ?? 0);
 	if (!(length > 0 && length <= 300_000) || req.headers['content-type'] !== 'application/json') {
-		throw new Error('需要不超过 300 KB 的 JSON 请求。');
+		throw new Error('300 KB 以下の JSON リクエストが必要です。');
 	}
 	const chunks: Buffer[] = [];
 	for await (const chunk of req) chunks.push(chunk as Buffer);
 	const body = JSON.parse(Buffer.concat(chunks).toString('utf8'));
-	if (typeof body !== 'object' || body === null) throw new Error('需要包含 svg 和 base 的 JSON 对象。');
+	if (typeof body !== 'object' || body === null) throw new Error('svg と base を含む JSON オブジェクトが必要です。');
 	return body as { svg?: unknown; base?: unknown };
 }
 
@@ -59,8 +59,8 @@ export function atelier(iconDir: string): Plugin {
 		apply: 'serve',
 		configureServer(server) {
 			server.middlewares.use('/__atelier/icons', async (req, res) => {
-				if (!isLocal(req)) return reply(res, 403, { error: '只接受本地同源请求。' });
-				if (req.method !== 'POST') return reply(res, 405, { error: '只接受 POST。' });
+				if (!isLocal(req)) return reply(res, 403, { error: 'ローカルの同一オリジンのリクエストだけを受け付けます。' });
+				if (req.method !== 'POST') return reply(res, 405, { error: 'POST だけを受け付けます。' });
 				try {
 					const body = await readJson(req);
 					const slug = decodeURIComponent((req.url ?? '').replace(/^\//, '').split('?')[0]);

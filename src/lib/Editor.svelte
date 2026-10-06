@@ -21,7 +21,7 @@
 				source = validate(draft);
 				error = '';
 			} catch (e) {
-				error = `${(e as Error).message} 暂时保留上次有效预览。`;
+				error = `${(e as Error).message} 前回の有効なプレビューを残しています。`;
 			}
 		}, 180);
 	}
@@ -42,7 +42,7 @@
 		try {
 			await saveSource(id, submitted, base);
 			base = submitted;
-			note = '源稿已保存到 icons/。';
+			note = '原稿を icons/ に保存しました。';
 		} catch (e) {
 			note = (e as Error).message;
 		} finally {
@@ -66,13 +66,13 @@
 
 <div class="editor">
 	<div class="head">
-		<label for="source">SVG 源稿</label>
-		<span class={['state', dirty && 'dirty']}>{dirty ? '尚未保存' : '已保存'}</span>
+		<label for="source">SVG 原稿</label>
+		<span class={['state', dirty && 'dirty']}>{dirty ? '未保存' : '保存済み'}</span>
 	</div>
 	<textarea id="source" bind:value={draft} oninput={onInput} onkeydown={indent} spellcheck="false" autocapitalize="off" autocomplete="off"></textarea>
-	<p class={['note', error && 'error']} role="status">{error || note || '修改路径、线条或颜色，预览会随之更新。'}</p>
+	<p class={['note', error && 'error']} role="status">{error || note || 'パス、線、色を変えると、プレビューも更新されます。'}</p>
 	<button type="button" class="button primary" disabled={!dirty || !!error || saving} onclick={save}>
-		保存修改 <kbd class="mono-text">⌘S</kbd>
+		変更を保存 <kbd class="mono-text">⌘S</kbd>
 	</button>
 </div>
 

@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#453D35" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" data-category="饮食">
-  <title>甜品</title>
-  <desc>盘子上的一枚布丁，顶上淋着焦糖，放一颗樱桃。</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#453D35" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" data-category="食事">
+  <title>プリン</title>
+  <desc>皿の上のプリン。カラメルをかけて、さくらんぼを一粒。</desc>
   <path d="M15.6 20h16.8q2.2 0 2.6 2.3l.5 2.7H12.5l.5-2.7q.4-2.3 2.6-2.3Z" fill="#8A6200" fill-opacity=".16" stroke="none"/>
   <path d="M10.4 39 13 22.3q.4-2.3 2.6-2.3h16.8q2.2 0 2.6 2.3L37.6 39M6 39h36"/>
   <path d="M16.3 25h2.2q1.2 0 1.2 1.2v1.8a1.8 1.8 0 0 0 3.6 0v-1.8q0-1.2 1.2-1.2h7.2" stroke="#8A6200"/>

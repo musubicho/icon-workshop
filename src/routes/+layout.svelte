@@ -19,14 +19,14 @@
 		<img src="/brand/nyatabi.webp" alt="" width="40" height="40" />
 		<span>Nyatabi Icons</span>
 	</a>
-	<nav aria-label="站点">
-		<a href="/#icons">图标</a>
+	<nav aria-label="サイト">
+		<a href="/#icons">アイコン</a>
 		<a href="https://github.com/musubicho/icon-workshop">GitHub</a>
 		<button
 			type="button"
 			class="theme"
 			aria-pressed={dark}
-			aria-label={dark ? '切换到浅色' : '切换到深色'}
+			aria-label={dark ? 'ライトに切り替え' : 'ダークに切り替え'}
 			onclick={() => setTheme(dark ? 'light' : 'dark')}
 		>
 			<Icon markup={glyph('appearance')} size={24} glyph />
@@ -37,7 +37,7 @@
 {@render children()}
 
 <footer class="wrap footer">
-	<span>为 Nyatabi 的 Web 与 iOS 画同一套形状。</span>
+	<span>Nyatabi の Web と iOS に、同じかたちを描く。</span>
 	<a href="https://nyatabi.app">nyatabi.app</a>
 </footer>
 

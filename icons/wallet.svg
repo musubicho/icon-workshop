@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#453D35" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" data-category="账本">
-  <title>钱包</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#453D35" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" data-category="帳簿">
+  <title>財布</title>
   <path d="M39 37.6q0 3.4-4 3.4H10c-3 0-5-2-5-5V23c0-3 2-5 5-5h25q4 0 4 3.4"/>
   <path d="M11 18l19-6q3-1 4 2l1.3 4M12 17.7 26 6.5q2.6-2 4.3.8l2.8 5.1"/>
   <path d="M30.5 25H40q2 0 2 2v5q0 2-2 2h-9.5a4.5 4.5 0 0 1 0-9Z" fill="#C23B22" fill-opacity=".12" stroke="#C23B22"/>

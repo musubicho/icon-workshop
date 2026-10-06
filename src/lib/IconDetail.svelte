@@ -25,7 +25,7 @@
 			await navigator.clipboard.writeText(text);
 			announce(message);
 		} catch {
-			announce('浏览器拒绝了剪贴板访问。');
+			announce('ブラウザがクリップボードへのアクセスを拒否しました。');
 		}
 	}
 
@@ -37,8 +37,8 @@
 	}
 </script>
 
-<nav class="wrap crumbs" aria-label="位置">
-	<a href="/#icons">图标</a><span aria-hidden="true">/</span><span>{icon.category}</span><span aria-hidden="true">/</span><span aria-current="page">{icon.name}</span>
+<nav class="wrap crumbs" aria-label="現在位置">
+	<a href="/#icons">アイコン</a><span aria-hidden="true">/</span><span>{icon.category}</span><span aria-hidden="true">/</span><span aria-current="page">{icon.name}</span>
 </nav>
 
 <main class="wrap detail">
@@ -51,18 +51,18 @@
 			<span class="mono-text id">{icon.id} · musubi-{icon.id}</span>
 			{#if icon.desc}<p>{icon.desc}</p>{/if}
 		</div>
-		<div class="segmented" role="group" aria-label="导出样式">
-			<button type="button" aria-pressed={!current} onclick={() => (current = false)}>原色</button>
-			<button type="button" aria-pressed={current} onclick={() => (current = true)}>单色 currentColor</button>
+		<div class="segmented" role="group" aria-label="書き出しスタイル">
+			<button type="button" aria-pressed={!current} onclick={() => (current = false)}>カラー</button>
+			<button type="button" aria-pressed={current} onclick={() => (current = true)}>モノクロ currentColor</button>
 		</div>
 		<div class="actions">
-			<button type="button" class="button primary" onclick={() => copy(output, '已复制 SVG。')}>
-				<Icon markup={glyph('copy')} size={22} glyph />复制 SVG
+			<button type="button" class="button primary" onclick={() => copy(output, 'SVG をコピーしました。')}>
+				<Icon markup={glyph('copy')} size={22} glyph />SVG をコピー
 			</button>
 			<div class="pair">
-				<button type="button" class="button" onclick={download}><Icon markup={glyph('download')} size={20} glyph />下载 SVG</button>
-				<button type="button" class="button" onclick={() => copy(location.href, '已复制链接。')}>
-					<Icon markup={glyph('link')} size={20} glyph />复制链接
+				<button type="button" class="button" onclick={download}><Icon markup={glyph('download')} size={20} glyph />SVG をダウンロード</button>
+				<button type="button" class="button" onclick={() => copy(location.href, 'リンクをコピーしました。')}>
+					<Icon markup={glyph('link')} size={20} glyph />リンクをコピー
 				</button>
 			</div>
 			<p class="status" role="status">{status}</p>
@@ -76,7 +76,7 @@
 		{/if}
 		{#if related.length}
 			<div class="related">
-				<span class="label">同一册里</span>
+				<span class="label">同じ冊から</span>
 				<div>
 					{#each related as item (item.id)}
 						<a href="/icon/{item.id}" aria-label={item.name}><Icon markup={item.markup} size={40} /></a>

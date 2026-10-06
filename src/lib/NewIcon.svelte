@@ -22,27 +22,27 @@
 	}
 </script>
 
-<button type="button" class="button" onclick={() => ((error = ''), dialog.showModal())}>添一枚图标</button>
+<button type="button" class="button" onclick={() => ((error = ''), dialog.showModal())}>アイコンを一枚足す</button>
 
 <dialog bind:this={dialog}>
 	<form onsubmit={create}>
-		<h2>添一枚图标</h2>
-		<label>叫什么<input name="name" placeholder="例如：饭团" required maxlength="60" /></label>
+		<h2>アイコンを一枚足す</h2>
+		<label>名前<input name="name" placeholder="例：おにぎり" required maxlength="60" /></label>
 		<label>
-			文件名
-			<input name="id" placeholder="例如：onigiri" pattern="[a-z][a-z0-9\-]{'{0,63}'}" required maxlength="64" aria-describedby="id-help" />
+			ファイル名
+			<input name="id" placeholder="例：onigiri" pattern="[a-z][a-z0-9\-]{'{0,63}'}" required maxlength="64" aria-describedby="id-help" />
 		</label>
-		<small id="id-help">小写英文、数字、短横线；同时用作导出的资源名。</small>
+		<small id="id-help">小文字の英字、数字、ハイフン。書き出しのリソース名にも使います。</small>
 		<label>
-			收进哪一册
+			どの冊に入れる
 			<select name="category">
 				{#each categories as item (item.name)}<option>{item.name}</option>{/each}
 			</select>
 		</label>
 		{#if error}<p role="alert">{error}</p>{/if}
 		<div class="actions">
-			<button type="button" class="button" onclick={() => dialog.close()}>再想想</button>
-			<button type="submit" class="button primary">开始画</button>
+			<button type="button" class="button" onclick={() => dialog.close()}>やっぱりやめる</button>
+			<button type="submit" class="button primary">描きはじめる</button>
 		</div>
 	</form>
 </dialog>

@@ -5,6 +5,6 @@ export async function saveSource(id: string, svg: string, base: string | null): 
 		body: JSON.stringify({ svg, base })
 	});
 	const body = await response.json();
-	if (!response.ok) throw new Error(body.error || '请求失败，请重试。');
+	if (!response.ok) throw new Error(body.error || 'リクエストに失敗しました。もう一度試してください。');
 	return body;
 }

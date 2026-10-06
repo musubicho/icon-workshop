@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#453D35" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" data-category="旅途">
-  <title>位置</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#453D35" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" data-category="旅">
+  <title>場所</title>
   <path d="M24 5c-6.6 0-12 5.4-12 12 0 7 6.4 14.7 9.8 18.7q2.2 2.6 4.4 0C29.6 31.7 36 24 36 17c0-6.6-5.4-12-12-12Z"/>
   <circle cx="24" cy="17" r="4.5" fill="#C23B22" fill-opacity=".12" stroke="#C23B22"/>
   <path d="M14 36c-4 1-6 2-6 4 0 5 32 5 32 0 0-2-2-3-6-4" stroke="#8A6200"/>

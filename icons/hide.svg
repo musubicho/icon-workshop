@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#453D35" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" data-category="界面">
-  <title>不需要</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#453D35" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" data-category="画面">
+  <title>非表示</title>
   <path d="M5 24q8-12 19-12t19 12q-8 12-19 12T5 24Z" fill="#8A6200" fill-opacity=".1" stroke="none"/>
   <path d="M 29.72,35.13 Q 26.97,36 24,36 Q 13,36 5,24 Q 8.12,19.33 11.69,16.47 M 18.27,12.88 Q 21.03,12 24,12 Q 35,12 43,24 Q 39.88,28.68 36.3,31.54"/>
   <path d="M 23.71,18.51 A 5.5,5.5 0 0,1 29.5,24 A 5.5,5.5 0 0,1 29.48,24.48 M 24.3,29.49 A 5.5,5.5 0 0,1 18.5,24 A 5.5,5.5 0 0,1 18.52,23.51" stroke="#8A6200"/>

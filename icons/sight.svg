@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#453D35" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" data-category="旅途">
-  <title>游玩</title>
-  <desc>一道柔和上扬的鸟居。</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#453D35" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" data-category="旅">
+  <title>観光</title>
+  <desc>ゆるく立ち上がる鳥居。</desc>
   <path d="M5 9q19 6 38 0M7 15q17 3 34 0" stroke="#C23B22"/>
   <path d="M14.8 19.7 13 41M33.2 19.7 35 41M12 24h24M24 20.1v3.9"/>
   <path d="M10 42h6M32 42h6"/>

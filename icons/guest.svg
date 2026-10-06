@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#453D35" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" data-category="账本">
-  <title>来宾</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#453D35" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" data-category="帳簿">
+  <title>ゲスト</title>
   <rect x="6" y="13" width="36" height="30" rx="6"/>
   <path d="M20 13V9a4 4 0 0 1 8 0v4"/>
   <path d="M20 17h8" stroke="#8A6200"/>

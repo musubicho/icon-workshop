@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#453D35" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" data-category="界面">
-  <title>备份</title>
-  <desc>云里转着一圈箭头。</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#453D35" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" data-category="画面">
+  <title>バックアップ</title>
+  <desc>雲の中を回る矢印。</desc>
   <path d="M14 37h21a8 8 0 0 0 1.5-15.9A11 11 0 0 0 15.2 19 9 9 0 0 0 14 37Z" fill="#8A6200" fill-opacity=".12"/>
   <path d="M31.39 22.6A6.8 6.8 0 1 1 24.91 19.23M21.84 16.65 24.91 19.23 22.34 22.29" stroke="#C23B22"/>
 </svg>

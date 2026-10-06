@@ -6,6 +6,6 @@ export const entries: EntryGenerator = () => icons.map(({ id }) => ({ id }));
 
 export const load: PageLoad = ({ params }) => {
 	const icon = iconById.get(params.id);
-	if (!icon) error(404, '没有这枚图标。');
+	if (!icon) error(404, 'このアイコンはありません。');
 	return { icon };
 };

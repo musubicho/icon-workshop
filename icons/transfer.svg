@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#453D35" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" data-category="账本">
-  <title>转账</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#453D35" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" data-category="帳簿">
+  <title>送金</title>
   <circle cx="15" cy="15" r="9"/>
   <circle cx="33" cy="33" r="9"/>
   <path d="M15 11v8M11 15h8M33 29v8M29 33h8" stroke="#8A6200"/>

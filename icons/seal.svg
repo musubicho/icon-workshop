@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#453D35" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" data-category="界面">
-  <title>完成</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#453D35" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" data-category="画面">
+  <title>完了印</title>
   <path d="M24 8A4.6 4.6 0 0 1 32 10.14A4.6 4.6 0 0 1 37.86 16A4.6 4.6 0 0 1 40 24A4.6 4.6 0 0 1 37.86 32A4.6 4.6 0 0 1 32 37.86A4.6 4.6 0 0 1 24 40A4.6 4.6 0 0 1 16 37.86A4.6 4.6 0 0 1 10.14 32A4.6 4.6 0 0 1 8 24A4.6 4.6 0 0 1 10.14 16A4.6 4.6 0 0 1 16 10.14A4.6 4.6 0 0 1 24 8Z" fill="#8A6200" fill-opacity=".12"/>
   <path d="m16.5 24.5 5 5 10-11" stroke="#C23B22"/>
 </svg>
