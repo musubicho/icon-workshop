@@ -4,6 +4,8 @@
 	import Icon from '#lib/Icon.svelte';
 	import NewIcon from '#lib/NewIcon.svelte';
 	import Segmented from '#lib/Segmented.svelte';
+	import Seo from '#lib/Seo.svelte';
+	import { site } from '#lib/site.ts';
 	import { categories, glyph, icons } from '#lib/icons.ts';
 	import { prefs } from '#lib/prefs.svelte.ts';
 
@@ -27,10 +29,20 @@
 </script>
 
 <svelte:window onkeydown={focusSearch} />
-<svelte:head>
-	<title>Nyatabi Icons · 旅の小さなことを、アイコンにする</title>
-	<meta name="description" content="Nyatabi の帳簿と旅程で使う、丸みのある線のアイコン。SVG 原稿と iOS アセットの書き出し。" />
-</svelte:head>
+<Seo
+	title={site.title}
+	description={site.description}
+	path="/"
+	jsonLd={{
+		'@context': 'https://schema.org',
+		'@type': 'WebSite',
+		name: site.name,
+		url: site.origin,
+		description: site.description,
+		inLanguage: 'ja',
+		publisher: { '@type': 'Organization', name: 'Nyatabi', url: 'https://nyatabi.app' }
+	}}
+/>
 
 <Hero />
 
