@@ -6,7 +6,7 @@
 
 <p align="center">Turn the small things of a journey into icons.<br />Soft shapes for everyday things.</p>
 
-A collection of **93 SVG originals** drawn for [Nyatabi](https://nyatabi.app), with the same shapes available for Web and native iOS. Browse them at **<https://icons.nyatabi.app>**.
+A collection of **98 SVG originals** drawn for [Nyatabi](https://nyatabi.app), with the same shapes available for Web and native iOS. Browse them at **<https://icons.nyatabi.app>**.
 
 Rounded outlines, warm ink, vermilion, gold, and matcha green. The collection covers the expense categories and itinerary types used in Nyatabi, ledger, receipt, wallet, split, transfer, and knot motifs, and the interface icons that replace SF Symbols in the app's menus, rows, and empty states. The site's own interface uses only icons from this collection.
 
@@ -128,7 +128,7 @@ Custom colors retain their original values in color previews and exports, so che
 | Food | Groceries, matcha, onigiri, pudding, ramen, sake, takeout |
 | Travel | Bus, drive, gift, lodging, passport, pin, plane, sight, taxi, ticket, train, walk |
 | Everyday | Entertainment, medicine, other, rent, shopping, SIM, subscription, tissue, top-up, utilities |
-| Interface | Appearance, calendar, camera, chats, clear, clock, cloud, copy, database, delete account, developer, device, directions, done, download, edit, failed, filter, fit, folder, forget, hide, info, invite, language, later, layers, link, list, locate, map, memory, model, nearby, note, photo, privacy, profile, refresh, reschedule, scan, schedule, seal, search, settings, share, sheet, sign out, sparkle, stats, storage, swap, trash, undo, usage, want |
+| Interface | Appearance, back, calendar, camera, chats, clear, clock, cloud, copy, database, delete account, developer, device, directions, done, download, edit, expand, failed, filter, fit, folder, forget, hide, info, invite, language, later, layers, link, list, locate, map, memory, model, more, nearby, note, photo, plus, privacy, profile, refresh, reschedule, scan, schedule, seal, search, send, settings, share, sheet, sign out, sparkle, stats, storage, swap, trash, undo, usage, want |
 | Knot | Knot |
 
 ## Project files and checks
