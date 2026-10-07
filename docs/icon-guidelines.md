@@ -47,7 +47,7 @@ Monochrome mode (`currentColor`, iOS template images) turns every color into one
 
 ## Shape
 
-- **An arrow is one color for its whole length.** Head and shaft are both ink, or both colored. The two barbs sit symmetrically on either side of the tangent at the end of the shaft. Curved arrows follow the same rule.
+- **An arrow is one color for its whole length.** Head and shaft are both ink, or both colored. The two barbs sit symmetrically on either side of the tangent at the end of the shaft. On a curved arrow, a head that is exactly on the tangent looks like it points into the curve, so turn it around its tip, away from the arc's center. Tune the angle by eye for each arrow; tighter curves need more (`later` 10.5°, `refresh` 13.5°, `subscription` 23.5°, `backup` 24.5°). Recheck barb spacing after turning.
 - **Silhouette corners are rounded.** Where a curve meets a flat base, such as a shoulder, a plate, or a stand, close it with `q` at a radius of about 2. Do not meet at a right angle. Stars, gears, checks, and crosses keep their points.
 - **Interior detail sits on the visual center.** Rules and marks inside a card, tag, or badge are centered on the area left after holes and straps are removed. Do not push them into a corner.
 - When a badge sits on the subject (a plus on a calendar, a top-up on a card), break the subject's outline around the badge, as in rule 4.
