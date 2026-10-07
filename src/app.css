@@ -134,6 +134,7 @@ select {
 	font-weight: 700;
 	font-size: 15px;
 	text-decoration: none;
+	white-space: nowrap;
 	cursor: pointer;
 	transition: transform 0.15s cubic-bezier(0.2, 0.8, 0.2, 1), background-color 0.15s;
 }
@@ -154,6 +155,8 @@ select {
 }
 
 .segmented {
+	position: relative;
+	isolation: isolate;
 	display: flex;
 	flex: none;
 	width: max-content;
@@ -186,39 +189,15 @@ select {
 
 .segment-indicator {
 	position: absolute;
-	inset: 0;
+	top: 4px;
+	bottom: 4px;
+	left: 0;
 	z-index: -1;
 	border-radius: inherit;
 	background: var(--surface);
 	box-shadow: 0 1px 2px rgb(40 30 20 / 0.15);
 	pointer-events: none;
-	view-transition-name: segment-indicator;
-}
-
-html[data-segment]::view-transition-old(root) {
-	display: none;
-}
-
-html[data-segment]::view-transition-new(root) {
-	animation: none;
-}
-
-html[data-segment]::view-transition-group(segment-indicator) {
-	animation-duration: 280ms;
-	animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
-}
-
-html[data-segment]::view-transition-image-pair(segment-indicator) {
-	mix-blend-mode: normal;
-}
-
-html[data-segment]::view-transition-old(segment-indicator) {
-	display: none;
-}
-
-html[data-segment]::view-transition-new(segment-indicator) {
-	height: 100%;
-	animation: none;
+	transition: transform 280ms cubic-bezier(0.2, 0.8, 0.2, 1), width 280ms cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .sr-only {

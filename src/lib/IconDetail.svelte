@@ -178,9 +178,13 @@
 	}
 
 	.pair {
-		display: grid;
-		grid-template-columns: repeat(2, minmax(0, 1fr));
+		display: flex;
+		flex-wrap: wrap;
 		gap: 8px;
+	}
+
+	.pair .button {
+		flex: 1 0 auto;
 	}
 
 	.status {

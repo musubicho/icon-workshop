@@ -1,6 +1,4 @@
 <script lang="ts">
-	import { morph } from './morph.ts';
-
 	let {
 		value,
 		label,
@@ -12,19 +10,37 @@
 		options: { id: string; label: string }[];
 		select: (id: string) => void;
 	} = $props();
+	let group: HTMLDivElement;
+	let position = $state<{ x: number; width: number }>();
+
+	$effect(() => {
+		value;
+		options;
+		const measure = () => {
+			const active = group.querySelector<HTMLButtonElement>('button[aria-pressed="true"]');
+			position = active ? { x: active.offsetLeft, width: active.offsetWidth } : undefined;
+		};
+		measure();
+		const observer = new ResizeObserver(measure);
+		observer.observe(group);
+		group.querySelectorAll('button').forEach((button) => observer.observe(button));
+		return () => observer.disconnect();
+	});
 </script>
 
-<div class="segmented" role="group" aria-label={label}>
+<div bind:this={group} class="segmented" role="group" aria-label={label}>
+	{#if position}
+		<span class="segment-indicator" aria-hidden="true" style:transform="translateX({position.x}px)" style:width="{position.width}px"></span>
+	{/if}
 	{#each options as option (option.id)}
 		<button
 			type="button"
 			aria-pressed={value === option.id}
 			onclick={() => {
 				if (value === option.id) return;
-				morph(() => select(option.id));
+				select(option.id);
 			}}
 		>
-			{#if value === option.id}<span class="segment-indicator" aria-hidden="true"></span>{/if}
 			{option.label}
 		</button>
 	{/each}
