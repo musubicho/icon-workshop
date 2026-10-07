@@ -1,5 +1,5 @@
 import { strToU8, zipSync, type Zippable } from 'fflate';
-import { exportSvg, resize, type Mode } from '../svg.ts';
+import { exportSvg, glyph, resize, type Mode } from '../svg.ts';
 
 const INFO = { info: { author: 'xcode', version: 1 } };
 const json = (value: unknown) => strToU8(JSON.stringify(value, null, 2));
@@ -22,6 +22,13 @@ export function exportIos(icons: { id: string; svg: string }[], mode: Mode): Uin
 				'preserves-vector-representation': true,
 				'template-rendering-intent': mode === 'mono' ? 'template' : 'original'
 			}
+		});
+		const glyphPrefix = `MusubiIcons.xcassets/musubi-${id}-glyph.imageset/`;
+		files[glyphPrefix + 'glyph.svg'] = strToU8(glyph(source));
+		files[glyphPrefix + 'Contents.json'] = json({
+			...INFO,
+			images: [{ filename: 'glyph.svg', idiom: 'universal' }],
+			properties: { 'preserves-vector-representation': true, 'template-rendering-intent': 'template' }
 		});
 	}
 	return zipSync(files);

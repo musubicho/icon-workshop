@@ -61,6 +61,17 @@ export function exportSvg(source: string, mode: Mode | 'current', theme: Theme =
 	});
 }
 
+const TINT = /\s*<[a-z]+\b[^>]*\/>/g;
+
+// Template images turn the light fills into a solid gray block, and 2.4 drawn at glass-button size is about half the stroke of the SF Symbols beside it.
+export function glyph(source: string, strokeWidth = 3): string {
+	const body = exportSvg(source, 'mono')
+		.replace(TINT, (element) => (/fill-opacity=/.test(element) && /stroke="none"/.test(element) ? '' : element))
+		.replace(/\sfill="[^"]*"(?=[^>]*fill-opacity=)/g, '')
+		.replace(/\sfill-opacity="[^"]*"/g, '');
+	return rootTag(body, (tag) => tag.replace(/\sstroke-width="[^"]*"/, ` stroke-width="${strokeWidth}"`));
+}
+
 export function resize(source: string, size: number): string {
 	return rootTag(source, (tag) => tag.replace(/\swidth="[^"]*"/, ` width="${size}"`).replace(/\sheight="[^"]*"/, ` height="${size}"`));
 }
