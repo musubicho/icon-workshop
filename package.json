@@ -25,7 +25,8 @@
   },
   "dependencies": {
     "@xmldom/xmldom": "^0.9.12",
-    "fflate": "^0.8.3"
+    "fflate": "^0.8.3",
+    "svg-pathdata": "^8.0.0"
   },
   "packageManager": "pnpm@12.4.1"
 }

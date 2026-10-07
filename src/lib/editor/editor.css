@@ -1,0 +1,174 @@
+:where(.workbench) :is(button, input, textarea, select) {
+	font: inherit;
+	color: inherit;
+}
+:where(.workbench) button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	min-height: 44px;
+	padding: 0 16px;
+	border: 1px solid transparent;
+	border-radius: 999px;
+	background: transparent;
+	font-weight: 700;
+	white-space: nowrap;
+	cursor: pointer;
+	transition:
+		transform 0.15s cubic-bezier(0.2, 0.8, 0.2, 1),
+		background-color 0.15s,
+		color 0.15s;
+}
+:where(.workbench) button:hover:not(:disabled) {
+	background: var(--sunken);
+}
+:where(.workbench) button:active:not(:disabled) {
+	transform: scale(0.97);
+}
+:where(.workbench) button:disabled {
+	opacity: 0.4;
+	cursor: not-allowed;
+}
+:where(.workbench) .round {
+	width: 44px;
+	padding: 0;
+}
+:where(.workbench) .outlined {
+	border-color: var(--line);
+	background: var(--surface);
+}
+:where(.workbench) .small {
+	min-height: 38px;
+	padding: 0 12px;
+	font-size: 13px;
+}
+:where(.workbench) :is(.inked, .inked:hover:not(:disabled)) {
+	background: var(--ink);
+	border-color: var(--ink);
+	color: var(--paper);
+}
+:where(.workbench) .mirror {
+	transform: scaleX(-1);
+}
+:where(.workbench) .card {
+	border-radius: 24px;
+	background: var(--surface);
+	border: 1px solid var(--sunken);
+}
+:where(.workbench) .chip {
+	font-size: 12px;
+	font-weight: 700;
+	color: var(--gold-ink);
+	background: var(--gold-wash);
+	padding: 3px 10px;
+	border-radius: 999px;
+}
+:where(.workbench) .chip.accent {
+	color: var(--accent-ink);
+	background: color-mix(in srgb, var(--accent) 10%, transparent);
+}
+:where(.workbench) h2 {
+	margin: 0;
+	font-size: 17px;
+	font-weight: 900;
+}
+:where(.workbench) h3 {
+	margin: 0;
+	font-size: 14px;
+	font-weight: 700;
+	color: var(--body);
+}
+
+.workbench .segmented {
+	width: auto;
+}
+.workbench .segmented button {
+	min-height: 36px;
+	padding: 0 14px;
+}
+.workbench .segmented button[aria-pressed='true'] {
+	background: var(--surface);
+	box-shadow: 0 1px 2px rgb(40 30 20 / 0.15);
+}
+
+:where(.workbench) .properties section {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+:where(.workbench) .properties small {
+	font-size: 12px;
+	line-height: 1.7;
+	color: var(--muted);
+}
+:where(.workbench) .fields {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 8px;
+}
+:where(.workbench) .field {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	height: 44px;
+	padding: 0 14px;
+	border: 1px solid var(--line);
+	border-radius: 14px;
+	background: var(--paper);
+}
+:where(.workbench) .field:focus-within {
+	outline: 2px solid var(--accent);
+	outline-offset: 1px;
+}
+:where(.workbench) .field > span {
+	flex: none;
+	font-size: 12px;
+	font-weight: 700;
+	color: var(--muted);
+}
+:where(.workbench) .field input {
+	width: 100%;
+	min-width: 0;
+	border: 0;
+	padding: 0;
+	background: transparent;
+	font: 14px var(--mono);
+	text-align: right;
+}
+:where(.workbench) .field input:focus-visible {
+	outline: none;
+}
+:where(.workbench) input[type='checkbox'] {
+	flex: none;
+	width: 18px;
+	height: 18px;
+	margin: 0;
+	accent-color: #c23b22;
+}
+:where(.workbench) .check {
+	grid-column: 1 / -1;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	min-height: 36px;
+}
+:where(.workbench) .node-picker {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	font-size: 13px;
+	font-weight: 700;
+	color: var(--body);
+}
+:where(.workbench) .node-picker :is(select, input) {
+	height: 44px;
+	padding: 0 14px;
+	border: 1px solid var(--line);
+	border-radius: 14px;
+	background: var(--paper);
+	font-weight: 400;
+}
+:where(.workbench) .wide {
+	width: 100%;
+}

@@ -12,10 +12,10 @@
 		event.preventDefault();
 		const form = new FormData(event.currentTarget as HTMLFormElement);
 		const id = String(form.get('id'));
-		const source = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#453D35" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" data-category="${escape(String(form.get('category')))}">\n  <title>${escape(String(form.get('name')))}</title>\n  <rect x="12" y="12" width="24" height="24" rx="6"/>\n</svg>\n`;
+		const source = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#453D35" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" data-category="${escape(String(form.get('category')))}">\n  <title>${escape(String(form.get('name')))}</title>\n</svg>\n`;
 		try {
 			await saveSource(id, source, null);
-			location.assign(`/icon/${id}`);
+			location.assign(`/icon/${id}?edit`);
 		} catch (e) {
 			error = (e as Error).message;
 		}

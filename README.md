@@ -10,8 +10,6 @@ A collection of **93 SVG originals** drawn for [Nyatabi](https://nyatabi.app), w
 
 Rounded outlines, warm ink, vermilion, gold, and matcha green. The collection covers the expense categories and itinerary types used in Nyatabi, ledger, receipt, wallet, split, transfer, and knot motifs, and the interface icons that replace SF Symbols in the app's menus, rows, and empty states. The site's own interface uses only icons from this collection.
 
-![The complete icon collection](docs/images/icons.png)
-
 ## The site
 
 - Search by name, ID, or collection; press <kbd>/</kbd> to focus the search box.
@@ -38,11 +36,30 @@ Open the URL Vite prints (port **4173** by default). The dev server binds to loc
 
 Read the drawing rules in [docs/icon-guidelines.md](docs/icon-guidelines.md) first: stroke width, palette, spacing between lines, and the self-check before each change.
 
-1. Open an icon's page. In dev mode, the **SVG source** editor appears in the side panel; previews update as you type.
-2. Click **Save changes** or press **⌘S / Ctrl+S** to write the file in `icons/`.
-3. Use **Add an icon** on the home page to create a new source file. IDs start with a lowercase letter and contain only lowercase letters, digits, and hyphens, up to 64 characters. The ID becomes the filename and iOS resource name.
+1. Open an icon's page in the dev server and click **Open editor**, or append `?edit` to its URL.
+2. Select shapes on the canvas or in **レイヤー** (Layers). Use **ノード** (Nodes) to edit path anchors and Bézier handles. **ペン** (Pen), **四角形** (Rectangle), **楕円** (Ellipse), and **線** (Line) draw new geometry.
+3. Click **保存する** (Save) or press **⌘S / Ctrl+S** to write the original to `icons/`. **Add an icon** on the home page opens a blank artboard in the editor.
 
-You can also edit files in an external vector editor. If a file has changed elsewhere, saving reports a conflict and leaves that file intact.
+The workbench supports multi-selection, movement, scaling, rotation, alignment, distribution, grouping, ordering, and conversion of basic shapes to paths. The inspector edits geometry, palette colors, opacity, and document metadata. Source edits and the canvas share one document; invalid source keeps the last valid preview and cannot be saved.
+
+- **V / A**: selection / nodes. **P / R / E / L / H**: pen / rectangle / ellipse / line / pan.
+- **Space + drag** pans; the wheel zooms. **Shift** constrains gestures; **Alt** bypasses grid snapping.
+- Arrow keys move by **0.1** SVG units, or **1** with Shift. **⌘D** duplicates; **⌘G / ⇧⌘G** groups / ungroups.
+- Drag while placing pen anchors to draw curves. **Enter** finishes; clicking the first anchor closes the path.
+- A selected anchor exposes midpoint insertion, smooth/corner conversion, breaking, closing, and deletion. The anchor picker and coordinate fields also allow keyboard editing.
+- **⌘Z / ⇧⌘Z** undo / redo up to 100 operations. A complete drag is one operation.
+
+Drafts are stored in this browser and offered for recovery when you reopen the editor. External file changes produce a conflict comparison; download your draft, load the disk version, or manually merge before saving. Hidden and locked layers are editing aids only and do not change exported artwork.
+
+The bottom strip previews the complete icon at 16, 24, and 48 px in light/dark and color/monochrome. **書き出す** (Export) downloads the current draft as SVG or a single-icon iOS asset catalog; the sidebar link exports the saved collection. The inspector's **セルフチェック** lists the drawing self-check; follow it and sync the exported assets into the app after saving final icon changes.
+
+Browser regression checks (with `pnpm dev` running and `agent-browser` installed):
+
+```sh
+node scripts/check-editor.js
+```
+
+The browser check uses an isolated session and simulated save responses; HTTP tests use a temporary directory. Neither changes repository icons.
 
 ## Use on the Web
 
@@ -120,7 +137,8 @@ Custom colors retain their original values in color previews and exports, so che
 | --- | --- |
 | `icons/` | Editable SVG originals; the source of all pages and exports |
 | `src/lib/svg.ts` | Validation, themable markup, and color exports |
-| `src/lib/server/ios.ts` | Xcode asset catalog export |
+| `src/lib/ios.ts` | Shared Xcode asset catalog export |
+| `src/lib/editor/` | Development workbench and SVG editing operations |
 | `src/lib/server/atelier.ts` | Dev-only save endpoint (Vite plugin) |
 | `src/routes/` | Home, icon pages, and the prerendered `MusubiIcons-<mode>.zip` |
 

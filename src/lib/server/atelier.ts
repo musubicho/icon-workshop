@@ -60,7 +60,13 @@ export function atelier(iconDir: string): Plugin {
 		configureServer(server) {
 			server.middlewares.use('/__atelier/icons', async (req, res) => {
 				if (!isLocal(req)) return reply(res, 403, { error: 'ローカルの同一オリジンのリクエストだけを受け付けます。' });
-				if (req.method !== 'POST') return reply(res, 405, { error: 'POST だけを受け付けます。' });
+				if (req.method === 'GET') {
+					const slug = (req.url ?? '').replace(/^\//, '').split('?')[0];
+					if (!/^[a-z][a-z0-9-]{0,63}$/.test(slug)) return reply(res, 400, { error: 'Invalid icon ID.' });
+					try { return reply(res, 200, { svg: readFileSync(path.join(iconDir, `${slug}.svg`), 'utf8') }); }
+					catch { return reply(res, 404, { error: 'Icon not found.' }); }
+				}
+				if (req.method !== 'POST') return reply(res, 405, { error: 'GET / POST only.' });
 				try {
 					const body = await readJson(req);
 					const slug = decodeURIComponent((req.url ?? '').replace(/^\//, '').split('?')[0]);
