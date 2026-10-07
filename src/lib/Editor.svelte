@@ -1,5 +1,7 @@
 <script lang="ts">
 	import { onMount, untrack } from 'svelte';
+	import Icon from './Icon.svelte';
+	import { glyph } from './icons.ts';
 	let { id, base: initial, source = $bindable() }: { id: string; base: string; source: string } = $props();
 	let base = $state(untrack(() => initial));
 	let open = $state(false);
@@ -21,7 +23,7 @@
 	<span>LOCAL ATELIER</span>
 	<h2>Refine every little detail.</h2>
 	<p>Shapes, paths, and Bézier nodes. Edit the original SVG on the canvas.</p>
-	<button class="button primary" onclick={launch}>Open editor <span aria-hidden="true">↗</span></button>
+	<button class="button primary" onclick={launch}>Open editor <Icon markup={glyph('edit')} size={22} glyph /></button>
 </div>
 <dialog bind:this={dialog} oncancel={(e) => e.preventDefault()} aria-label="SVG icon editor">
 	{#if open}
