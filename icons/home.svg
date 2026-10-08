@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#453D35" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" data-category="日常">
+  <title>日常</title>
+  <desc>窓のある小さな家。</desc>
+  <path d="M11 22h26v15q0 5-5 5H16q-5 0-5-5Z" fill="#8A6200" fill-opacity=".14" stroke="none"/>
+  <path d="m6 21 15-13q3-2.6 6 0l15 13M11 16.7v20.3q0 5 5 5h16q5 0 5-5V16.7"/>
+  <rect x="19.5" y="25.5" width="9" height="9" rx="2.2" stroke="#C23B22"/>
+  <path d="M24 25.5v9M19.5 30h9" stroke="#C23B22"/>
+</svg>

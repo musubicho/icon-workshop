@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#453D35" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" data-category="旅">
+  <title>足跡</title>
+  <desc>出発点からくねって目的地のピンへ続く道。</desc>
+  <circle cx="11" cy="37" r="3.5" fill="#8A6200" fill-opacity=".14" stroke="#8A6200"/>
+  <path d="M18 34.3C24 32.8 28.5 30.5 27 26.5S17.5 22 18 17.5 23 12 27 12.5"/>
+  <path d="M36 22.5c-3.6-3.7-5.2-6.3-5.2-8.7a5.2 5.2 0 0 1 10.4 0c0 2.4-1.6 5-5.2 8.7Z" fill="#C23B22" fill-opacity=".12" stroke="#C23B22"/>
+  <circle cx="36" cy="13.8" r="1.6" fill="#C23B22" stroke="none"/>
+</svg>

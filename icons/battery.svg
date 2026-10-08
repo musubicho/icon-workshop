@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#453D35" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" data-category="画面">
+  <title>省電力</title>
+  <desc>四分の三まで残った電池。</desc>
+  <rect x="6" y="14" width="32" height="20" rx="5"/>
+  <path d="M38 19.5h1.5q2.5 0 2.5 2.5v4q0 2.5-2.5 2.5H38"/>
+  <path d="M13 20v8M19.5 20v8M26 20v8" stroke="#8A6200"/>
+</svg>

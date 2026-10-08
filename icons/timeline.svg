@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#453D35" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" data-category="画面">
+  <title>日ごと</title>
+  <desc>縦の線に並ぶ一日ずつのカード。</desc>
+  <path d="M10 7v34"/>
+  <rect x="17" y="7" width="23" height="8" rx="3"/>
+  <rect x="17" y="20" width="23" height="8" rx="3" fill="#C23B22" fill-opacity=".12" stroke="#C23B22"/>
+  <rect x="17" y="33" width="23" height="8" rx="3"/>
+</svg>

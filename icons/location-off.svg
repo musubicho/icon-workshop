@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#453D35" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" data-category="画面">
+  <title>位置オフ</title>
+  <desc>斜線で切られた現在地の矢印。</desc>
+  <path d="M38.5 8.5 9 21.3q-2.5 1.1.2 1.8l13.2 3.4 3.4 13.2q.7 2.7 1.8.2Z" fill="#C23B22" fill-opacity=".14" stroke="none"/>
+  <path d="M21.12 16.04 38.5 8.5l-6.42 18.49"/>
+  <path d="M14.04 19.11 9 21.3q-2.5 1.1.2 1.8l13.2 3.4 3.4 13.2q.7 2.7 1.8.2l1.86-5.35"/>
+  <path d="m8 8 32 32"/>
+</svg>

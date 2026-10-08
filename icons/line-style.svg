@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#453D35" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" data-category="画面">
+  <title>線のスタイル</title>
+  <desc>直線、波線、点線の三本。</desc>
+  <path d="M9 12h30"/>
+  <path d="M9 26c3.5-6 6.5-6 9.5 0s6.5 6 9.5 0 6.5-6 9.5 0" stroke="#C23B22"/>
+  <circle cx="10" cy="38" r="1.6" fill="#8A6200" stroke="none"/>
+  <circle cx="17.25" cy="38" r="1.6" fill="#8A6200" stroke="none"/>
+  <circle cx="24.5" cy="38" r="1.6" fill="#8A6200" stroke="none"/>
+  <circle cx="31.75" cy="38" r="1.6" fill="#8A6200" stroke="none"/>
+  <circle cx="39" cy="38" r="1.6" fill="#8A6200" stroke="none"/>
+</svg>
