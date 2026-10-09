@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#453D35" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" data-category="画面">
+  <title>スーツケース</title>
+  <rect x="12" y="15" width="24" height="24" rx="5" fill="#8A6200" fill-opacity=".12"/>
+  <path d="M19 15V9.5q0-2 2-2h6q2 0 2 2V15"/>
+  <path d="M20 21v12M28 21v12" stroke="#C23B22"/>
+  <circle cx="17.5" cy="43.5" r="2" fill="#453D35" stroke="none"/>
+  <circle cx="30.5" cy="43.5" r="2" fill="#453D35" stroke="none"/>
+</svg>

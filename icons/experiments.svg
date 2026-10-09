@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#453D35" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" data-category="画面">
+  <title>実験的機能</title>
+  <path d="M14.4 29L10.5 35.5q-2.5 4.5 2.5 4.5h22q5 0 2.5-4.5L33.6 29Z" fill="#C23B22" fill-opacity=".14" stroke="none"/>
+  <path d="M17 8h14M20 8v11.5L10.5 35.5q-2.5 4.5 2.5 4.5h22q5 0 2.5-4.5L28 19.5V8"/>
+  <path d="M19 29h10" stroke="#C23B22"/>
+  <circle cx="21.5" cy="34.5" r="1.4" fill="#8A6200" stroke="none"/>
+  <circle cx="27" cy="35.5" r="1" fill="#8A6200" stroke="none"/>
+</svg>
