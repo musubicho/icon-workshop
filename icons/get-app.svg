@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#453D35" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" data-category="画面">
+  <title>アプリを入手</title>
+  <desc>アプリのアイコンの中に下向きの矢印。</desc>
+  <rect x="8" y="8" width="32" height="32" rx="10" fill="#8A6200" fill-opacity=".12"/>
+  <path d="M24 16v16" stroke="#C23B22"/>
+  <path d="M18 26l6 6 6-6" stroke="#C23B22"/>
+</svg>
