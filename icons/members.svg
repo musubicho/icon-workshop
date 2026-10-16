@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#453D35" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" data-category="画面">
+  <title>メンバー</title>
+  <circle cx="17" cy="17" r="5.5"/>
+  <circle cx="31.5" cy="16" r="5"/>
+  <path d="M9 39q-2 0-2-2c0-5.6 4.5-9.5 10-9.5s10 3.9 10 9.5q0 2-2 2Z" fill="#8A6200" fill-opacity=".14"/>
+  <path d="M30.6 39H39q2 0 2-2c0-5.6-4.3-9.5-9.5-9.5c-1.4 0-2.7.25-3.85.75"/>
+</svg>
