@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" fill="none" stroke="#453D35" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" data-category="画面">
+  <title>ドット</title>
+  <desc>点で描いた陸地と、たどった点。</desc>
+  <circle cx="17" cy="10" r="1.8" fill="#453D35" stroke="none"/>
+  <circle cx="24" cy="10" r="1.8" fill="#453D35" stroke="none"/>
+  <circle cx="31" cy="10" r="1.8" fill="#453D35" stroke="none"/>
+  <circle cx="10" cy="17" r="1.8" fill="#453D35" stroke="none"/>
+  <circle cx="17" cy="17" r="2.4" fill="#C23B22" stroke="none"/>
+  <circle cx="24" cy="17" r="1.8" fill="#453D35" stroke="none"/>
+  <circle cx="31" cy="17" r="1.8" fill="#453D35" stroke="none"/>
+  <circle cx="38" cy="17" r="1.8" fill="#453D35" stroke="none"/>
+  <circle cx="10" cy="24" r="1.8" fill="#453D35" stroke="none"/>
+  <circle cx="17" cy="24" r="1.8" fill="#453D35" stroke="none"/>
+  <circle cx="24" cy="24" r="2.4" fill="#C23B22" stroke="none"/>
+  <circle cx="31" cy="24" r="1.8" fill="#453D35" stroke="none"/>
+  <circle cx="17" cy="31" r="1.8" fill="#453D35" stroke="none"/>
+  <circle cx="24" cy="31" r="2.4" fill="#C23B22" stroke="none"/>
+  <circle cx="31" cy="31" r="1.8" fill="#453D35" stroke="none"/>
+  <circle cx="24" cy="38" r="1.8" fill="#453D35" stroke="none"/>
+</svg>
